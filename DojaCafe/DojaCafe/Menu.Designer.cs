@@ -74,7 +74,7 @@ namespace DojaCafe
             this.Label_Empleado.Size = new System.Drawing.Size(122, 25);
             this.Label_Empleado.TabIndex = 0;
             this.Label_Empleado.Text = "Empleado_X";
-            this.Label_Empleado.Click += new System.EventHandler(this.guna2HtmlLabel1_Click);
+            this.Label_Empleado.Click += new System.EventHandler(this.label_C:\Users\mikel\Source\Repos\MikkelyEV\Proyecto_DojaCafe1\DojaCafe\packages\Guna.UI2.WinForms.2.0.1.4\lib\net40\Guna.UI2.dll_Click);
             // 
             // guna2DateTimePicker1
             // 
@@ -189,6 +189,7 @@ namespace DojaCafe
             this.Controls.Add(this.Empleado_foto);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Menu";
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Text = "Menu";
             ((System.ComponentModel.ISupportInitialize)(this.Empleado_foto)).EndInit();
             this.panel_principal.ResumeLayout(false);

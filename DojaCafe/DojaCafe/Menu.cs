@@ -16,30 +16,5 @@ namespace DojaCafe
         {
             InitializeComponent();
         }
-
-        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Panel_menu_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void guna2ShadowPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel_izq_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void boton_clientes_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

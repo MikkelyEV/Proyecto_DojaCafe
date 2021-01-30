@@ -69,6 +69,7 @@ namespace DojaCafe.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+<<<<<<< HEAD
         
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
@@ -79,5 +80,7 @@ namespace DojaCafe.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+=======
+>>>>>>> 58405faf49e47905472de72e3e5c18d676481cf6
     }
 }
