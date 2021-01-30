@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace DojaCafe
 {
-    public partial class Form1 : Form
+    public partial class Menu : Form
     {
-        public Form1()
+        public Menu()
         {
             InitializeComponent();
+        }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+            Form1 log = new Form1();
+            log.ShowDialog();
+
         }
     }
 }

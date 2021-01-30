@@ -117,4 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="guna2BorderlessForm1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="boton_clientes.CustomImages.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAATdJREFUSEvN
+        lj9qAmEUxBeL2OQSdlrnAKa0Nycw4AUCqdN6hIABD+BRrE1nozewyRb6MuObRcz3ofut+0F+MKDz3gy7
+        7h8s/gVm1oVG0JvEz12N7wNFQ2gD/YXeUGvNQMEEOrINrKFP6ZsG4Gyi9TQQ7EF7toB3qKMRZx15hDs9
+        jeqD0OIUN/uSFcCZr9hCVn0Q2nnWnmQFcOYrtpVVH4RKz9qjrADOfMVKWfVBaOvZfGeQ/RrkvYsIgvme
+        gwoUPEN5nuQKFLX3LkJwAE2hj0Qx01dNHCzMoAPUFGZnqrsEg9fTitkPNIdiR3lNzDBLwgsPc+UzG8tK
+        BtkXr7CVrDMwq1fDg6xkmPWKyKtDA9PXxqgm7IFXnUHs900RiZ7B0metsFTtGZh8mHgnxY4qRexo5w/B
+        bYriF3nxP+9EQCsoAAAAAElFTkSuQmCC
+</value>
+  </data>
 </root>
