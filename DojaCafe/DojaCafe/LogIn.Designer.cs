@@ -99,6 +99,7 @@
             this.txtb_usuario.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtb_usuario.FocusedState.Parent = this.txtb_usuario;
             this.txtb_usuario.Font = new System.Drawing.Font("Modern No. 20", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtb_usuario.ForeColor = System.Drawing.Color.SandyBrown;
             this.txtb_usuario.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtb_usuario.HoverState.Parent = this.txtb_usuario;
             this.txtb_usuario.Location = new System.Drawing.Point(104, 253);
@@ -131,6 +132,7 @@
             this.txtb_password.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtb_password.FocusedState.Parent = this.txtb_password;
             this.txtb_password.Font = new System.Drawing.Font("Modern No. 20", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtb_password.ForeColor = System.Drawing.Color.SandyBrown;
             this.txtb_password.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtb_password.HoverState.Parent = this.txtb_password;
             this.txtb_password.Location = new System.Drawing.Point(104, 315);
@@ -154,7 +156,7 @@
             this.btn_salir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_salir.Font = new System.Drawing.Font("Modern No. 20", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_salir.ForeColor = System.Drawing.Color.Peru;
-            this.btn_salir.Location = new System.Drawing.Point(245, 431);
+            this.btn_salir.Location = new System.Drawing.Point(245, 433);
             this.btn_salir.Name = "btn_salir";
             this.btn_salir.Size = new System.Drawing.Size(98, 38);
             this.btn_salir.TabIndex = 21;
