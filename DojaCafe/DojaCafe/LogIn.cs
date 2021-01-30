@@ -12,7 +12,8 @@ namespace DojaCafe
 {
     public partial class Form1 : Form
     {
-        public bool bandera = false;
+
+        System.Boolean Bandera = false;
         public Form1()
         {
             InitializeComponent();
@@ -32,7 +33,7 @@ namespace DojaCafe
         {
             if (txtb_usuario.Text == "admin" && txtb_password.Text == "123")
             {
-                bandera = true;
+                Bandera = true;
                 this.Close();
             }
             else
@@ -61,11 +62,6 @@ namespace DojaCafe
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void guna2HtmlLabel1_Click(object sender, EventArgs e)
         {
 
@@ -89,6 +85,27 @@ namespace DojaCafe
         private void txtb_usuario_TextChanged_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (Bandera == false)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_FormClosing_1(object sender, FormClosingEventArgs e)
+        {
+            if (Bandera == false)
+            {
+                Application.Exit();
+            }
         }
     }
 }
