@@ -101,6 +101,7 @@
             this.txtb_usuario.FocusedState.Parent = this.txtb_usuario;
             this.txtb_usuario.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtb_usuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(94)))), ((int)(((byte)(78)))));
+
             this.txtb_usuario.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtb_usuario.HoverState.Parent = this.txtb_usuario;
             this.txtb_usuario.Location = new System.Drawing.Point(78, 206);
