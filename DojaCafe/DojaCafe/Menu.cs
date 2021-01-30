@@ -28,7 +28,7 @@ namespace DojaCafe
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new Form2());
         }
 
         private void guna2Button4_Click(object sender, EventArgs e)
@@ -38,7 +38,7 @@ namespace DojaCafe
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void panel_izq_Paint(object sender, PaintEventArgs e)
@@ -88,6 +88,28 @@ namespace DojaCafe
         }
 
         private void guna2HtmlLabel4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private Form activeForm = null;
+        private void openChildForm(Form childForm)
+        {
+            if (activeForm != null)
+            {
+                activeForm.Close();
+            }
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panel_productos.Controls.Add(childForm);
+            panel_productos.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+
+        }
+        private void panel_productos_Paint(object sender, PaintEventArgs e)
         {
 
         }
