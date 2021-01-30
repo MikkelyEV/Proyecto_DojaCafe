@@ -16,6 +16,7 @@
             if (disposing && (components != null))
             {
                 components.Dispose();
+                new Menu();
             }
             base.Dispose(disposing);
         }

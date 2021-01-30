@@ -63,13 +63,22 @@ namespace DojaCafe.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Artboard_1504 {
+            get {
+                object obj = ResourceManager.GetObject("Artboard_1504", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap loginpng {
             get {
                 object obj = ResourceManager.GetObject("loginpng", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-<<<<<<< HEAD
         
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
@@ -80,7 +89,5 @@ namespace DojaCafe.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-=======
->>>>>>> 58405faf49e47905472de72e3e5c18d676481cf6
     }
 }

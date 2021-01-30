@@ -32,38 +32,23 @@ namespace DojaCafe
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
-            this.Empleado_foto = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.Label_Empleado = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label_doja = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panel_principal = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.boton_clientes = new Guna.UI2.WinForms.Guna2Button();
             this.panel_izq = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.boton_clientes = new Guna.UI2.WinForms.Guna2Button();
-            ((System.ComponentModel.ISupportInitialize)(this.Empleado_foto)).BeginInit();
+            this.Empleado_foto = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.panel_principal.SuspendLayout();
             this.panel_izq.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Empleado_foto)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2BorderlessForm1
             // 
             this.guna2BorderlessForm1.ContainerControl = this;
-            // 
-            // Empleado_foto
-            // 
-            this.Empleado_foto.Image = global::DojaCafe.Properties.Resources.worker_woman_coronavirus_512__1_;
-            this.Empleado_foto.Location = new System.Drawing.Point(589, 10);
-            this.Empleado_foto.Name = "Empleado_foto";
-            this.Empleado_foto.ShadowDecoration.Depth = 50;
-            this.Empleado_foto.ShadowDecoration.Enabled = true;
-            this.Empleado_foto.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.Empleado_foto.ShadowDecoration.Parent = this.Empleado_foto;
-            this.Empleado_foto.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(15);
-            this.Empleado_foto.Size = new System.Drawing.Size(58, 52);
-            this.Empleado_foto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Empleado_foto.TabIndex = 0;
-            this.Empleado_foto.TabStop = false;
             // 
             // Label_Empleado
             // 
@@ -74,7 +59,6 @@ namespace DojaCafe
             this.Label_Empleado.Size = new System.Drawing.Size(122, 25);
             this.Label_Empleado.TabIndex = 0;
             this.Label_Empleado.Text = "Empleado_X";
-            this.Label_Empleado.Click += new System.EventHandler(this.label_C:\Users\mikel\Source\Repos\MikkelyEV\Proyecto_DojaCafe1\DojaCafe\packages\Guna.UI2.WinForms.2.0.1.4\lib\net40\Guna.UI2.dll_Click);
             // 
             // guna2DateTimePicker1
             // 
@@ -121,34 +105,8 @@ namespace DojaCafe
             this.panel_principal.Name = "panel_principal";
             this.panel_principal.ShadowDecoration.Enabled = true;
             this.panel_principal.ShadowDecoration.Parent = this.panel_principal;
-            this.panel_principal.Size = new System.Drawing.Size(180, 600);
+            this.panel_principal.Size = new System.Drawing.Size(180, 450);
             this.panel_principal.TabIndex = 1;
-            // 
-            // panel_izq
-            // 
-            this.panel_izq.BackColor = System.Drawing.Color.Transparent;
-            this.panel_izq.Controls.Add(this.guna2PictureBox1);
-            this.panel_izq.Controls.Add(this.label_doja);
-            this.panel_izq.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_izq.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(165)))), ((int)(((byte)(152)))));
-            this.panel_izq.Location = new System.Drawing.Point(0, 0);
-            this.panel_izq.Name = "panel_izq";
-            this.panel_izq.ShadowColor = System.Drawing.Color.Black;
-            this.panel_izq.Size = new System.Drawing.Size(180, 60);
-            this.panel_izq.TabIndex = 0;
-            this.panel_izq.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_izq_Paint);
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.Location = new System.Drawing.Point(12, 15);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(30, 27);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 1;
-            this.guna2PictureBox1.TabStop = false;
-            this.guna2PictureBox1.UseTransparentBackground = true;
             // 
             // boton_clientes
             // 
@@ -175,27 +133,65 @@ namespace DojaCafe
             this.boton_clientes.TabIndex = 1;
             this.boton_clientes.Text = "CLIENTES";
             this.boton_clientes.UseTransparentBackground = true;
-            this.boton_clientes.Click += new System.EventHandler(this.boton_clientes_Click);
+            // 
+            // panel_izq
+            // 
+            this.panel_izq.BackColor = System.Drawing.Color.Transparent;
+            this.panel_izq.Controls.Add(this.guna2PictureBox1);
+            this.panel_izq.Controls.Add(this.label_doja);
+            this.panel_izq.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_izq.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(165)))), ((int)(((byte)(152)))));
+            this.panel_izq.Location = new System.Drawing.Point(0, 0);
+            this.panel_izq.Name = "panel_izq";
+            this.panel_izq.ShadowColor = System.Drawing.Color.Black;
+            this.panel_izq.Size = new System.Drawing.Size(180, 60);
+            this.panel_izq.TabIndex = 0;
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Image = global::DojaCafe.Properties.Resources.Artboard_1504;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(12, 15);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
+            this.guna2PictureBox1.Size = new System.Drawing.Size(30, 27);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.TabIndex = 1;
+            this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.UseTransparentBackground = true;
+            // 
+            // Empleado_foto
+            // 
+            this.Empleado_foto.Image = global::DojaCafe.Properties.Resources.worker_woman_coronavirus_512__1_;
+            this.Empleado_foto.Location = new System.Drawing.Point(589, 10);
+            this.Empleado_foto.Name = "Empleado_foto";
+            this.Empleado_foto.ShadowDecoration.Depth = 50;
+            this.Empleado_foto.ShadowDecoration.Enabled = true;
+            this.Empleado_foto.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.Empleado_foto.ShadowDecoration.Parent = this.Empleado_foto;
+            this.Empleado_foto.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(15);
+            this.Empleado_foto.Size = new System.Drawing.Size(58, 52);
+            this.Empleado_foto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Empleado_foto.TabIndex = 0;
+            this.Empleado_foto.TabStop = false;
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(906, 600);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.guna2DateTimePicker1);
             this.Controls.Add(this.panel_principal);
             this.Controls.Add(this.Label_Empleado);
             this.Controls.Add(this.Empleado_foto);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Menu";
-            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Text = "Menu";
-            ((System.ComponentModel.ISupportInitialize)(this.Empleado_foto)).EndInit();
             this.panel_principal.ResumeLayout(false);
             this.panel_izq.ResumeLayout(false);
             this.panel_izq.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Empleado_foto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
