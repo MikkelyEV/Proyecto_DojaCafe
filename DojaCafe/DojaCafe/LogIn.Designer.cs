@@ -99,6 +99,7 @@
             this.txtb_usuario.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtb_usuario.FocusedState.Parent = this.txtb_usuario;
             this.txtb_usuario.Font = new System.Drawing.Font("Modern No. 20", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtb_usuario.ForeColor = System.Drawing.Color.SandyBrown;
             this.txtb_usuario.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtb_usuario.HoverState.Parent = this.txtb_usuario;
             this.txtb_usuario.Location = new System.Drawing.Point(104, 253);
@@ -131,6 +132,7 @@
             this.txtb_password.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtb_password.FocusedState.Parent = this.txtb_password;
             this.txtb_password.Font = new System.Drawing.Font("Modern No. 20", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtb_password.ForeColor = System.Drawing.Color.SandyBrown;
             this.txtb_password.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtb_password.HoverState.Parent = this.txtb_password;
             this.txtb_password.Location = new System.Drawing.Point(104, 315);
