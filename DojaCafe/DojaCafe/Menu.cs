@@ -12,15 +12,17 @@ namespace DojaCafe
 {
     public partial class Menu : Form
     {
+
+
         public Menu()
         {
             InitializeComponent();
+            Form1 login = new Form1();
+            login.ShowDialog();
         }
 
         private void Menu_Load(object sender, EventArgs e)
         {
-            Form1 log = new Form1();
-            log.ShowDialog();
 
         }
 
@@ -46,7 +48,8 @@ namespace DojaCafe
 
         private void guna2Button5_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
+            //aqui se abre otro login
         }
 
         private void Label_Empleado_Click(object sender, EventArgs e)
@@ -55,6 +58,11 @@ namespace DojaCafe
         }
 
         private void panel_izq_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

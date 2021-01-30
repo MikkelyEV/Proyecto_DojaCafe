@@ -31,33 +31,35 @@ namespace DojaCafe
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
-            this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.forma_menu = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.Label_Empleado = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label_doja = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panel_principal = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.boton_clientes = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.Empleado_foto = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.panel_izq = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.boton_empleados = new Guna.UI2.WinForms.Guna2Button();
+            this.boton_venta = new Guna.UI2.WinForms.Guna2Button();
+            this.boton_inventario = new Guna.UI2.WinForms.Guna2Button();
+            this.boton_productos = new Guna.UI2.WinForms.Guna2Button();
+            this.boton_clientes = new Guna.UI2.WinForms.Guna2Button();
+            this.foto_empleado = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.panel_superior = new Guna.UI2.WinForms.Guna2Panel();
-            this.panel_usuario = new Guna.UI2.WinForms.Guna2Panel();
             this.boton_sesion = new Guna.UI2.WinForms.Guna2Button();
+            this.panel_usuario = new Guna.UI2.WinForms.Guna2Panel();
+            this.control_arrastre = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.panel_principal.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Empleado_foto)).BeginInit();
             this.panel_izq.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.foto_empleado)).BeginInit();
             this.panel_superior.SuspendLayout();
             this.panel_usuario.SuspendLayout();
             this.SuspendLayout();
             // 
-            // guna2BorderlessForm1
+            // forma_menu
             // 
-            this.guna2BorderlessForm1.ContainerControl = this;
+            this.forma_menu.ContainerControl = this;
             // 
             // Label_Empleado
             // 
@@ -107,11 +109,12 @@ namespace DojaCafe
             // 
             // panel_principal
             // 
+            this.panel_principal.Controls.Add(this.guna2Panel1);
             this.panel_principal.Controls.Add(this.panel_izq);
-            this.panel_principal.Controls.Add(this.guna2Button4);
-            this.panel_principal.Controls.Add(this.guna2Button3);
-            this.panel_principal.Controls.Add(this.guna2Button2);
-            this.panel_principal.Controls.Add(this.guna2Button1);
+            this.panel_principal.Controls.Add(this.boton_empleados);
+            this.panel_principal.Controls.Add(this.boton_venta);
+            this.panel_principal.Controls.Add(this.boton_inventario);
+            this.panel_principal.Controls.Add(this.boton_productos);
             this.panel_principal.Controls.Add(this.boton_clientes);
             this.panel_principal.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel_principal.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(120)))), ((int)(((byte)(101)))));
@@ -124,124 +127,153 @@ namespace DojaCafe
             this.panel_principal.Size = new System.Drawing.Size(180, 450);
             this.panel_principal.TabIndex = 1;
             // 
-            // guna2Button4
+            // panel_izq
             // 
-            this.guna2Button4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button4.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2Button4.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.guna2Button4.CheckedState.Parent = this.guna2Button4;
-            this.guna2Button4.CustomImages.CheckedImage = ((System.Drawing.Image)(resources.GetObject("guna2Button4.CustomImages.CheckedImage")));
-            this.guna2Button4.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button4.CustomImages.Image")));
-            this.guna2Button4.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button4.CustomImages.ImageOffset = new System.Drawing.Point(5, 0);
-            this.guna2Button4.CustomImages.ImageSize = new System.Drawing.Size(16, 16);
-            this.guna2Button4.CustomImages.Parent = this.guna2Button4;
-            this.guna2Button4.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.guna2Button4.ForeColor = System.Drawing.Color.White;
-            this.guna2Button4.HoverState.BorderColor = System.Drawing.Color.Gray;
-            this.guna2Button4.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(82)))), ((int)(((byte)(61)))));
-            this.guna2Button4.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(27)))), ((int)(((byte)(20)))));
-            this.guna2Button4.HoverState.Parent = this.guna2Button4;
-            this.guna2Button4.ImageSize = new System.Drawing.Size(16, 16);
-            this.guna2Button4.Location = new System.Drawing.Point(-1, 337);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.PressedColor = System.Drawing.Color.Empty;
-            this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
-            this.guna2Button4.Size = new System.Drawing.Size(180, 50);
-            this.guna2Button4.TabIndex = 5;
-            this.guna2Button4.Text = "EMPLEADOS";
-            this.guna2Button4.UseTransparentBackground = true;
-            this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
+            this.panel_izq.Controls.Add(this.guna2PictureBox1);
+            this.panel_izq.Controls.Add(this.label_doja);
+            this.panel_izq.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_izq.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(165)))), ((int)(((byte)(152)))));
+            this.panel_izq.Location = new System.Drawing.Point(0, 0);
+            this.panel_izq.Name = "panel_izq";
+            this.panel_izq.ShadowDecoration.Enabled = true;
+            this.panel_izq.ShadowDecoration.Parent = this.panel_izq;
+            this.panel_izq.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(5, 5, 5, 2);
+            this.panel_izq.Size = new System.Drawing.Size(180, 50);
+            this.panel_izq.TabIndex = 6;
+            this.panel_izq.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_izq_Paint_1);
             // 
-            // guna2Button3
+            // guna2PictureBox1
             // 
-            this.guna2Button3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button3.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2Button3.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.guna2Button3.CheckedState.Parent = this.guna2Button3;
-            this.guna2Button3.CustomImages.CheckedImage = ((System.Drawing.Image)(resources.GetObject("guna2Button3.CustomImages.CheckedImage")));
-            this.guna2Button3.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button3.CustomImages.Image")));
-            this.guna2Button3.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button3.CustomImages.ImageOffset = new System.Drawing.Point(5, 0);
-            this.guna2Button3.CustomImages.ImageSize = new System.Drawing.Size(16, 16);
-            this.guna2Button3.CustomImages.Parent = this.guna2Button3;
-            this.guna2Button3.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.HoverState.BorderColor = System.Drawing.Color.Gray;
-            this.guna2Button3.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(82)))), ((int)(((byte)(61)))));
-            this.guna2Button3.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(27)))), ((int)(((byte)(20)))));
-            this.guna2Button3.HoverState.Parent = this.guna2Button3;
-            this.guna2Button3.ImageSize = new System.Drawing.Size(16, 16);
-            this.guna2Button3.Location = new System.Drawing.Point(0, 113);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.PressedColor = System.Drawing.Color.Empty;
-            this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(179, 50);
-            this.guna2Button3.TabIndex = 1;
-            this.guna2Button3.Text = "VENTA";
-            this.guna2Button3.UseTransparentBackground = true;
-            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox1.Image = global::DojaCafe.Properties.Resources.Artboard_1504;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
+            this.guna2PictureBox1.Size = new System.Drawing.Size(30, 27);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.TabIndex = 1;
+            this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.UseTransparentBackground = true;
             // 
-            // guna2Button2
+            // boton_empleados
             // 
-            this.guna2Button2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
-            this.guna2Button2.CustomImages.CheckedImage = ((System.Drawing.Image)(resources.GetObject("guna2Button2.CustomImages.CheckedImage")));
-            this.guna2Button2.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button2.CustomImages.Image")));
-            this.guna2Button2.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button2.CustomImages.ImageOffset = new System.Drawing.Point(5, 0);
-            this.guna2Button2.CustomImages.ImageSize = new System.Drawing.Size(15, 15);
-            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
-            this.guna2Button2.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.BorderColor = System.Drawing.Color.Gray;
-            this.guna2Button2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(82)))), ((int)(((byte)(61)))));
-            this.guna2Button2.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(27)))), ((int)(((byte)(20)))));
-            this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.ImageSize = new System.Drawing.Size(16, 16);
-            this.guna2Button2.Location = new System.Drawing.Point(-1, 225);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.PressedColor = System.Drawing.Color.Empty;
-            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(180, 50);
-            this.guna2Button2.TabIndex = 3;
-            this.guna2Button2.Text = "INVENTARIO";
-            this.guna2Button2.UseTransparentBackground = true;
+            this.boton_empleados.BackColor = System.Drawing.Color.Transparent;
+            this.boton_empleados.BorderColor = System.Drawing.Color.Transparent;
+            this.boton_empleados.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.boton_empleados.CheckedState.Parent = this.boton_empleados;
+            this.boton_empleados.CustomImages.CheckedImage = ((System.Drawing.Image)(resources.GetObject("guna2Button4.CustomImages.CheckedImage")));
+            this.boton_empleados.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button4.CustomImages.Image")));
+            this.boton_empleados.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.boton_empleados.CustomImages.ImageOffset = new System.Drawing.Point(5, 0);
+            this.boton_empleados.CustomImages.ImageSize = new System.Drawing.Size(16, 16);
+            this.boton_empleados.CustomImages.Parent = this.boton_empleados;
+            this.boton_empleados.FillColor = System.Drawing.Color.Transparent;
+            this.boton_empleados.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.boton_empleados.ForeColor = System.Drawing.Color.White;
+            this.boton_empleados.HoverState.BorderColor = System.Drawing.Color.Gray;
+            this.boton_empleados.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(82)))), ((int)(((byte)(61)))));
+            this.boton_empleados.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(27)))), ((int)(((byte)(20)))));
+            this.boton_empleados.HoverState.Parent = this.boton_empleados;
+            this.boton_empleados.ImageSize = new System.Drawing.Size(16, 16);
+            this.boton_empleados.Location = new System.Drawing.Point(-1, 337);
+            this.boton_empleados.Name = "boton_empleados";
+            this.boton_empleados.PressedColor = System.Drawing.Color.Empty;
+            this.boton_empleados.ShadowDecoration.Parent = this.boton_empleados;
+            this.boton_empleados.Size = new System.Drawing.Size(180, 50);
+            this.boton_empleados.TabIndex = 5;
+            this.boton_empleados.Text = "EMPLEADOS";
+            this.boton_empleados.UseTransparentBackground = true;
+            this.boton_empleados.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
-            // guna2Button1
+            // boton_venta
             // 
-            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.CheckedImage = ((System.Drawing.Image)(resources.GetObject("guna2Button1.CustomImages.CheckedImage")));
-            this.guna2Button1.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.CustomImages.Image")));
-            this.guna2Button1.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button1.CustomImages.ImageOffset = new System.Drawing.Point(5, 0);
-            this.guna2Button1.CustomImages.ImageSize = new System.Drawing.Size(18, 18);
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.BorderColor = System.Drawing.Color.Gray;
-            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(82)))), ((int)(((byte)(61)))));
-            this.guna2Button1.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(27)))), ((int)(((byte)(20)))));
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.ImageSize = new System.Drawing.Size(16, 16);
-            this.guna2Button1.Location = new System.Drawing.Point(0, 281);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.PressedColor = System.Drawing.Color.Empty;
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(180, 50);
-            this.guna2Button1.TabIndex = 4;
-            this.guna2Button1.Text = "PRODUCTOS";
-            this.guna2Button1.UseTransparentBackground = true;
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            this.boton_venta.BackColor = System.Drawing.Color.Transparent;
+            this.boton_venta.BorderColor = System.Drawing.Color.Transparent;
+            this.boton_venta.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.boton_venta.Checked = true;
+            this.boton_venta.CheckedState.Parent = this.boton_venta;
+            this.boton_venta.CustomImages.CheckedImage = ((System.Drawing.Image)(resources.GetObject("guna2Button3.CustomImages.CheckedImage")));
+            this.boton_venta.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button3.CustomImages.Image")));
+            this.boton_venta.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.boton_venta.CustomImages.ImageOffset = new System.Drawing.Point(5, 0);
+            this.boton_venta.CustomImages.ImageSize = new System.Drawing.Size(16, 16);
+            this.boton_venta.CustomImages.Parent = this.boton_venta;
+            this.boton_venta.FillColor = System.Drawing.Color.Transparent;
+            this.boton_venta.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.boton_venta.ForeColor = System.Drawing.Color.White;
+            this.boton_venta.HoverState.BorderColor = System.Drawing.Color.Gray;
+            this.boton_venta.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(82)))), ((int)(((byte)(61)))));
+            this.boton_venta.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(27)))), ((int)(((byte)(20)))));
+            this.boton_venta.HoverState.Parent = this.boton_venta;
+            this.boton_venta.ImageSize = new System.Drawing.Size(16, 16);
+            this.boton_venta.Location = new System.Drawing.Point(0, 113);
+            this.boton_venta.Name = "boton_venta";
+            this.boton_venta.PressedColor = System.Drawing.Color.Empty;
+            this.boton_venta.ShadowDecoration.Parent = this.boton_venta;
+            this.boton_venta.Size = new System.Drawing.Size(179, 50);
+            this.boton_venta.TabIndex = 1;
+            this.boton_venta.Text = "VENTA";
+            this.boton_venta.UseTransparentBackground = true;
+            this.boton_venta.Click += new System.EventHandler(this.guna2Button3_Click);
+            // 
+            // boton_inventario
+            // 
+            this.boton_inventario.BackColor = System.Drawing.Color.Transparent;
+            this.boton_inventario.BorderColor = System.Drawing.Color.Transparent;
+            this.boton_inventario.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.boton_inventario.CheckedState.Parent = this.boton_inventario;
+            this.boton_inventario.CustomImages.CheckedImage = ((System.Drawing.Image)(resources.GetObject("guna2Button2.CustomImages.CheckedImage")));
+            this.boton_inventario.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button2.CustomImages.Image")));
+            this.boton_inventario.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.boton_inventario.CustomImages.ImageOffset = new System.Drawing.Point(5, 0);
+            this.boton_inventario.CustomImages.ImageSize = new System.Drawing.Size(15, 15);
+            this.boton_inventario.CustomImages.Parent = this.boton_inventario;
+            this.boton_inventario.FillColor = System.Drawing.Color.Transparent;
+            this.boton_inventario.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.boton_inventario.ForeColor = System.Drawing.Color.White;
+            this.boton_inventario.HoverState.BorderColor = System.Drawing.Color.Gray;
+            this.boton_inventario.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(82)))), ((int)(((byte)(61)))));
+            this.boton_inventario.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(27)))), ((int)(((byte)(20)))));
+            this.boton_inventario.HoverState.Parent = this.boton_inventario;
+            this.boton_inventario.ImageSize = new System.Drawing.Size(16, 16);
+            this.boton_inventario.Location = new System.Drawing.Point(-1, 225);
+            this.boton_inventario.Name = "boton_inventario";
+            this.boton_inventario.PressedColor = System.Drawing.Color.Empty;
+            this.boton_inventario.ShadowDecoration.Parent = this.boton_inventario;
+            this.boton_inventario.Size = new System.Drawing.Size(180, 50);
+            this.boton_inventario.TabIndex = 3;
+            this.boton_inventario.Text = "INVENTARIO";
+            this.boton_inventario.UseTransparentBackground = true;
+            // 
+            // boton_productos
+            // 
+            this.boton_productos.BackColor = System.Drawing.Color.Transparent;
+            this.boton_productos.BorderColor = System.Drawing.Color.Transparent;
+            this.boton_productos.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.boton_productos.CheckedState.Parent = this.boton_productos;
+            this.boton_productos.CustomImages.CheckedImage = ((System.Drawing.Image)(resources.GetObject("guna2Button1.CustomImages.CheckedImage")));
+            this.boton_productos.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.CustomImages.Image")));
+            this.boton_productos.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.boton_productos.CustomImages.ImageOffset = new System.Drawing.Point(5, 0);
+            this.boton_productos.CustomImages.ImageSize = new System.Drawing.Size(18, 18);
+            this.boton_productos.CustomImages.Parent = this.boton_productos;
+            this.boton_productos.FillColor = System.Drawing.Color.Transparent;
+            this.boton_productos.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.boton_productos.ForeColor = System.Drawing.Color.White;
+            this.boton_productos.HoverState.BorderColor = System.Drawing.Color.Gray;
+            this.boton_productos.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(82)))), ((int)(((byte)(61)))));
+            this.boton_productos.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(27)))), ((int)(((byte)(20)))));
+            this.boton_productos.HoverState.Parent = this.boton_productos;
+            this.boton_productos.ImageSize = new System.Drawing.Size(16, 16);
+            this.boton_productos.Location = new System.Drawing.Point(0, 281);
+            this.boton_productos.Name = "boton_productos";
+            this.boton_productos.PressedColor = System.Drawing.Color.Empty;
+            this.boton_productos.ShadowDecoration.Parent = this.boton_productos;
+            this.boton_productos.Size = new System.Drawing.Size(180, 50);
+            this.boton_productos.TabIndex = 4;
+            this.boton_productos.Text = "PRODUCTOS";
+            this.boton_productos.UseTransparentBackground = true;
+            this.boton_productos.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // boton_clientes
             // 
@@ -273,45 +305,17 @@ namespace DojaCafe
             this.boton_clientes.Text = "CLIENTES";
             this.boton_clientes.UseTransparentBackground = true;
             // 
-            // guna2PictureBox1
+            // foto_empleado
             // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.Image = global::DojaCafe.Properties.Resources.Artboard_1504;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(30, 27);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 1;
-            this.guna2PictureBox1.TabStop = false;
-            this.guna2PictureBox1.UseTransparentBackground = true;
-            // 
-            // Empleado_foto
-            // 
-            this.Empleado_foto.Image = global::DojaCafe.Properties.Resources.worker_woman_coronavirus_512__1_;
-            this.Empleado_foto.Location = new System.Drawing.Point(3, 3);
-            this.Empleado_foto.Name = "Empleado_foto";
-            this.Empleado_foto.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.Empleado_foto.ShadowDecoration.Parent = this.Empleado_foto;
-            this.Empleado_foto.Size = new System.Drawing.Size(49, 44);
-            this.Empleado_foto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Empleado_foto.TabIndex = 0;
-            this.Empleado_foto.TabStop = false;
-            // 
-            // panel_izq
-            // 
-            this.panel_izq.Controls.Add(this.guna2PictureBox1);
-            this.panel_izq.Controls.Add(this.label_doja);
-            this.panel_izq.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_izq.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(165)))), ((int)(((byte)(152)))));
-            this.panel_izq.Location = new System.Drawing.Point(0, 0);
-            this.panel_izq.Name = "panel_izq";
-            this.panel_izq.ShadowDecoration.Enabled = true;
-            this.panel_izq.ShadowDecoration.Parent = this.panel_izq;
-            this.panel_izq.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(5, 5, 5, 2);
-            this.panel_izq.Size = new System.Drawing.Size(180, 50);
-            this.panel_izq.TabIndex = 6;
-            this.panel_izq.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_izq_Paint_1);
+            this.foto_empleado.Image = global::DojaCafe.Properties.Resources.worker_woman_coronavirus_512__1_;
+            this.foto_empleado.Location = new System.Drawing.Point(3, 3);
+            this.foto_empleado.Name = "foto_empleado";
+            this.foto_empleado.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.foto_empleado.ShadowDecoration.Parent = this.foto_empleado;
+            this.foto_empleado.Size = new System.Drawing.Size(49, 44);
+            this.foto_empleado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.foto_empleado.TabIndex = 0;
+            this.foto_empleado.TabStop = false;
             // 
             // panel_superior
             // 
@@ -323,16 +327,6 @@ namespace DojaCafe
             this.panel_superior.ShadowDecoration.Parent = this.panel_superior;
             this.panel_superior.Size = new System.Drawing.Size(615, 50);
             this.panel_superior.TabIndex = 2;
-            // 
-            // panel_usuario
-            // 
-            this.panel_usuario.Controls.Add(this.Empleado_foto);
-            this.panel_usuario.Controls.Add(this.Label_Empleado);
-            this.panel_usuario.Location = new System.Drawing.Point(365, 0);
-            this.panel_usuario.Name = "panel_usuario";
-            this.panel_usuario.ShadowDecoration.Parent = this.panel_usuario;
-            this.panel_usuario.Size = new System.Drawing.Size(191, 50);
-            this.panel_usuario.TabIndex = 0;
             // 
             // boton_sesion
             // 
@@ -355,6 +349,29 @@ namespace DojaCafe
             this.boton_sesion.TabIndex = 3;
             this.boton_sesion.Click += new System.EventHandler(this.guna2Button5_Click);
             // 
+            // panel_usuario
+            // 
+            this.panel_usuario.Controls.Add(this.foto_empleado);
+            this.panel_usuario.Controls.Add(this.Label_Empleado);
+            this.panel_usuario.Location = new System.Drawing.Point(365, 0);
+            this.panel_usuario.Name = "panel_usuario";
+            this.panel_usuario.ShadowDecoration.Parent = this.panel_usuario;
+            this.panel_usuario.Size = new System.Drawing.Size(191, 50);
+            this.panel_usuario.TabIndex = 0;
+            // 
+            // control_arrastre
+            // 
+            this.control_arrastre.ContainerControl = this;
+            this.control_arrastre.TargetControl = this.panel_superior;
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.Location = new System.Drawing.Point(187, 51);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
+            this.guna2Panel1.Size = new System.Drawing.Size(614, 398);
+            this.guna2Panel1.TabIndex = 7;
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -364,14 +381,17 @@ namespace DojaCafe
             this.Controls.Add(this.panel_superior);
             this.Controls.Add(this.panel_principal);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Menu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
             this.Load += new System.EventHandler(this.Menu_Load);
             this.panel_principal.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Empleado_foto)).EndInit();
             this.panel_izq.ResumeLayout(false);
             this.panel_izq.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.foto_empleado)).EndInit();
             this.panel_superior.ResumeLayout(false);
             this.panel_usuario.ResumeLayout(false);
             this.panel_usuario.PerformLayout();
@@ -381,21 +401,23 @@ namespace DojaCafe
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox Empleado_foto;
+        private Guna.UI2.WinForms.Guna2BorderlessForm forma_menu;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox foto_empleado;
         private Guna.UI2.WinForms.Guna2HtmlLabel Label_Empleado;
         private Guna.UI2.WinForms.Guna2HtmlLabel label_doja;
         private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
         private Guna.UI2.WinForms.Guna2GradientPanel panel_principal;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2Button boton_clientes;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button boton_empleados;
+        private Guna.UI2.WinForms.Guna2Button boton_venta;
+        private Guna.UI2.WinForms.Guna2Button boton_inventario;
+        private Guna.UI2.WinForms.Guna2Button boton_productos;
         private Guna.UI2.WinForms.Guna2Button boton_sesion;
         private Guna.UI2.WinForms.Guna2Panel panel_usuario;
         private Guna.UI2.WinForms.Guna2Panel panel_izq;
         protected Guna.UI2.WinForms.Guna2Panel panel_superior;
+        private Guna.UI2.WinForms.Guna2DragControl control_arrastre;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
     }
 }
