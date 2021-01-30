@@ -23,5 +23,40 @@ namespace DojaCafe
             log.ShowDialog();
 
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel_izq_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label_Empleado_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel_izq_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
