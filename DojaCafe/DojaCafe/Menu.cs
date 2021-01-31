@@ -123,5 +123,10 @@ namespace DojaCafe
         {
             openChildForm(new Cliente());
         }
+
+        private void panel_menu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
