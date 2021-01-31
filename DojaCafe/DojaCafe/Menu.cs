@@ -33,12 +33,12 @@ namespace DojaCafe
 
         private void guna2Button4_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new Empleados());
         }
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            
+            openChildForm(new Ventas());
         }
 
         private void panel_izq_Paint(object sender, PaintEventArgs e)
@@ -116,6 +116,12 @@ namespace DojaCafe
 
         private void boton_inventario_Click(object sender, EventArgs e)
         {
+            openChildForm(new Inventario());
+        }
+
+        private void boton_clientes_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Cliente());
         }
     }
 }

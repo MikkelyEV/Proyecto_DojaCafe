@@ -16,5 +16,10 @@ namespace DojaCafe
         {
             InitializeComponent();
         }
+
+        private void nombre_lbl_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

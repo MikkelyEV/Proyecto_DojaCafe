@@ -29,8 +29,6 @@ namespace DojaCafe
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.SuspendLayout();
             // 
             // Cliente
@@ -46,7 +44,5 @@ namespace DojaCafe
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
     }
 }

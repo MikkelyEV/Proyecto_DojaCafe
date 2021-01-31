@@ -38,6 +38,7 @@ namespace DojaCafe
             this.panel_principal = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.panel_izq = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.boton_empleados = new Guna.UI2.WinForms.Guna2Button();
             this.boton_venta = new Guna.UI2.WinForms.Guna2Button();
             this.boton_inventario = new Guna.UI2.WinForms.Guna2Button();
@@ -46,17 +47,16 @@ namespace DojaCafe
             this.panel_superior = new Guna.UI2.WinForms.Guna2Panel();
             this.boton_sesion = new Guna.UI2.WinForms.Guna2Button();
             this.panel_usuario = new Guna.UI2.WinForms.Guna2Panel();
+            this.foto_empleado = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.control_arrastre = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.foto_empleado = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panel_menu = new Guna.UI2.WinForms.Guna2Panel();
             this.panel_principal.SuspendLayout();
             this.panel_izq.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.panel_superior.SuspendLayout();
             this.panel_usuario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.foto_empleado)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // forma_menu
@@ -151,6 +151,19 @@ namespace DojaCafe
             this.panel_izq.Size = new System.Drawing.Size(180, 50);
             this.panel_izq.TabIndex = 6;
             this.panel_izq.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_izq_Paint_1);
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox1.Image = global::DojaCafe.Properties.Resources.Artboard_1504;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
+            this.guna2PictureBox1.Size = new System.Drawing.Size(30, 27);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.TabIndex = 1;
+            this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.UseTransparentBackground = true;
             // 
             // boton_empleados
             // 
@@ -305,6 +318,7 @@ namespace DojaCafe
             this.boton_clientes.TabIndex = 2;
             this.boton_clientes.Text = "CLIENTES";
             this.boton_clientes.UseTransparentBackground = true;
+            this.boton_clientes.Click += new System.EventHandler(this.boton_clientes_Click);
             // 
             // panel_superior
             // 
@@ -350,6 +364,18 @@ namespace DojaCafe
             this.panel_usuario.Size = new System.Drawing.Size(191, 50);
             this.panel_usuario.TabIndex = 0;
             // 
+            // foto_empleado
+            // 
+            this.foto_empleado.Image = global::DojaCafe.Properties.Resources.worker_woman_coronavirus_512__1_;
+            this.foto_empleado.Location = new System.Drawing.Point(3, 3);
+            this.foto_empleado.Name = "foto_empleado";
+            this.foto_empleado.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.foto_empleado.ShadowDecoration.Parent = this.foto_empleado;
+            this.foto_empleado.Size = new System.Drawing.Size(49, 44);
+            this.foto_empleado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.foto_empleado.TabIndex = 0;
+            this.foto_empleado.TabStop = false;
+            // 
             // control_arrastre
             // 
             this.control_arrastre.ContainerControl = this;
@@ -364,31 +390,6 @@ namespace DojaCafe
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(3, 2);
             this.guna2HtmlLabel1.TabIndex = 8;
             this.guna2HtmlLabel1.Text = null;
-            // 
-            // foto_empleado
-            // 
-            this.foto_empleado.Image = global::DojaCafe.Properties.Resources.worker_woman_coronavirus_512__1_;
-            this.foto_empleado.Location = new System.Drawing.Point(3, 3);
-            this.foto_empleado.Name = "foto_empleado";
-            this.foto_empleado.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.foto_empleado.ShadowDecoration.Parent = this.foto_empleado;
-            this.foto_empleado.Size = new System.Drawing.Size(49, 44);
-            this.foto_empleado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.foto_empleado.TabIndex = 0;
-            this.foto_empleado.TabStop = false;
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.Image = global::DojaCafe.Properties.Resources.Artboard_1504;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(30, 27);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 1;
-            this.guna2PictureBox1.TabStop = false;
-            this.guna2PictureBox1.UseTransparentBackground = true;
             // 
             // panel_menu
             // 
@@ -418,11 +419,11 @@ namespace DojaCafe
             this.panel_principal.ResumeLayout(false);
             this.panel_izq.ResumeLayout(false);
             this.panel_izq.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.panel_superior.ResumeLayout(false);
             this.panel_usuario.ResumeLayout(false);
             this.panel_usuario.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.foto_empleado)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
