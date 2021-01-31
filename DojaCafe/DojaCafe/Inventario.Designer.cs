@@ -42,12 +42,11 @@ namespace DojaCafe
             this.btn_mod = new Guna.UI2.WinForms.Guna2Button();
             this.btn_add = new Guna.UI2.WinForms.Guna2Button();
             this.fecha_lbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txb_precio = new Guna.UI2.WinForms.Guna2TextBox();
             this.cantidad_lbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.prov_cbx = new System.Windows.Forms.ComboBox();
+            this.cbx_prov = new System.Windows.Forms.ComboBox();
             this.prov_lbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.ID_lbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.id_cbx = new System.Windows.Forms.ComboBox();
+            this.cbx_id = new System.Windows.Forms.ComboBox();
             this.btn_guardar = new Guna.UI2.WinForms.Guna2Button();
             this.pbx_clipboard = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.lbl_productos = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -65,29 +64,30 @@ namespace DojaCafe
             this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(823, 77);
+            this.guna2Panel1.Size = new System.Drawing.Size(726, 63);
             this.guna2Panel1.TabIndex = 69;
             // 
             // guna2PictureBox2
             // 
             this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
-            this.guna2PictureBox2.Location = new System.Drawing.Point(4, -80);
-            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2PictureBox2.Location = new System.Drawing.Point(-1, -332);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
             this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
-            this.guna2PictureBox2.Size = new System.Drawing.Size(823, 411);
+            this.guna2PictureBox2.Size = new System.Drawing.Size(727, 432);
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox2.TabIndex = 1;
             this.guna2PictureBox2.TabStop = false;
             // 
             // guna2PictureBox1
             // 
-            this.guna2PictureBox1.Location = new System.Drawing.Point(355, 12);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(266, 10);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(300, 200);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(225, 162);
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
             // 
@@ -97,7 +97,7 @@ namespace DojaCafe
             this.dtp_fecha.AutoRoundedCorners = true;
             this.dtp_fecha.BackColor = System.Drawing.Color.Transparent;
             this.dtp_fecha.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(225)))), ((int)(((byte)(220)))));
-            this.dtp_fecha.BorderRadius = 21;
+            this.dtp_fecha.BorderRadius = 17;
             this.dtp_fecha.BorderThickness = 2;
             this.dtp_fecha.CheckedState.Parent = this.dtp_fecha;
             this.dtp_fecha.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(55)))), ((int)(((byte)(49)))));
@@ -105,8 +105,7 @@ namespace DojaCafe
             this.dtp_fecha.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.dtp_fecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtp_fecha.HoverState.Parent = this.dtp_fecha;
-            this.dtp_fecha.Location = new System.Drawing.Point(383, 386);
-            this.dtp_fecha.Margin = new System.Windows.Forms.Padding(4);
+            this.dtp_fecha.Location = new System.Drawing.Point(166, 389);
             this.dtp_fecha.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtp_fecha.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtp_fecha.Name = "dtp_fecha";
@@ -114,7 +113,7 @@ namespace DojaCafe
             this.dtp_fecha.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(55)))), ((int)(((byte)(49)))));
             this.dtp_fecha.ShadowDecoration.Parent = this.dtp_fecha;
             this.dtp_fecha.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(3);
-            this.dtp_fecha.Size = new System.Drawing.Size(157, 44);
+            this.dtp_fecha.Size = new System.Drawing.Size(118, 36);
             this.dtp_fecha.TabIndex = 68;
             this.dtp_fecha.UseTransparentBackground = true;
             this.dtp_fecha.Value = new System.DateTime(2021, 1, 30, 20, 9, 59, 22);
@@ -125,7 +124,7 @@ namespace DojaCafe
             this.btn_mod.AutoRoundedCorners = true;
             this.btn_mod.BackColor = System.Drawing.Color.Transparent;
             this.btn_mod.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(44)))), ((int)(((byte)(34)))));
-            this.btn_mod.BorderRadius = 22;
+            this.btn_mod.BorderRadius = 17;
             this.btn_mod.BorderThickness = 1;
             this.btn_mod.CheckedState.Parent = this.btn_mod;
             this.btn_mod.CustomImages.Parent = this.btn_mod;
@@ -135,15 +134,14 @@ namespace DojaCafe
             this.btn_mod.HoverState.Parent = this.btn_mod;
             this.btn_mod.Image = ((System.Drawing.Image)(resources.GetObject("btn_mod.Image")));
             this.btn_mod.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_mod.Location = new System.Drawing.Point(644, 287);
-            this.btn_mod.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_mod.Location = new System.Drawing.Point(601, 135);
             this.btn_mod.Name = "btn_mod";
             this.btn_mod.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(50)))), ((int)(((byte)(39)))));
             this.btn_mod.ShadowDecoration.BorderRadius = 22;
             this.btn_mod.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(44)))), ((int)(((byte)(34)))));
             this.btn_mod.ShadowDecoration.Enabled = true;
             this.btn_mod.ShadowDecoration.Parent = this.btn_mod;
-            this.btn_mod.Size = new System.Drawing.Size(151, 46);
+            this.btn_mod.Size = new System.Drawing.Size(113, 37);
             this.btn_mod.TabIndex = 67;
             this.btn_mod.Text = "Modificar";
             this.btn_mod.TextOffset = new System.Drawing.Point(10, 0);
@@ -154,7 +152,7 @@ namespace DojaCafe
             this.btn_add.AutoRoundedCorners = true;
             this.btn_add.BackColor = System.Drawing.Color.Transparent;
             this.btn_add.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(44)))), ((int)(((byte)(34)))));
-            this.btn_add.BorderRadius = 22;
+            this.btn_add.BorderRadius = 17;
             this.btn_add.BorderThickness = 1;
             this.btn_add.CheckedState.Parent = this.btn_add;
             this.btn_add.CustomImages.Parent = this.btn_add;
@@ -164,15 +162,14 @@ namespace DojaCafe
             this.btn_add.HoverState.Parent = this.btn_add;
             this.btn_add.Image = ((System.Drawing.Image)(resources.GetObject("btn_add.Image")));
             this.btn_add.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_add.Location = new System.Drawing.Point(644, 364);
-            this.btn_add.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_add.Location = new System.Drawing.Point(601, 210);
             this.btn_add.Name = "btn_add";
             this.btn_add.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(50)))), ((int)(((byte)(39)))));
             this.btn_add.ShadowDecoration.BorderRadius = 22;
             this.btn_add.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(44)))), ((int)(((byte)(34)))));
             this.btn_add.ShadowDecoration.Enabled = true;
             this.btn_add.ShadowDecoration.Parent = this.btn_add;
-            this.btn_add.Size = new System.Drawing.Size(151, 46);
+            this.btn_add.Size = new System.Drawing.Size(113, 37);
             this.btn_add.TabIndex = 66;
             this.btn_add.Text = "Registrar";
             this.btn_add.TextOffset = new System.Drawing.Point(10, 0);
@@ -182,79 +179,46 @@ namespace DojaCafe
             this.fecha_lbl.BackColor = System.Drawing.Color.Transparent;
             this.fecha_lbl.Enabled = false;
             this.fecha_lbl.Font = new System.Drawing.Font("Montserrat Alternates", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fecha_lbl.Location = new System.Drawing.Point(383, 351);
-            this.fecha_lbl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.fecha_lbl.Location = new System.Drawing.Point(198, 360);
+            this.fecha_lbl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.fecha_lbl.Name = "fecha_lbl";
-            this.fecha_lbl.Size = new System.Drawing.Size(68, 30);
+            this.fecha_lbl.Size = new System.Drawing.Size(54, 24);
             this.fecha_lbl.TabIndex = 65;
             this.fecha_lbl.Text = "Fecha";
-            // 
-            // txb_precio
-            // 
-            this.txb_precio.Animated = true;
-            this.txb_precio.BackColor = System.Drawing.Color.Transparent;
-            this.txb_precio.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(106)))), ((int)(((byte)(88)))));
-            this.txb_precio.BorderRadius = 1;
-            this.txb_precio.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txb_precio.DefaultText = "";
-            this.txb_precio.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txb_precio.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txb_precio.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txb_precio.DisabledState.Parent = this.txb_precio;
-            this.txb_precio.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txb_precio.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(225)))), ((int)(((byte)(220)))));
-            this.txb_precio.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txb_precio.FocusedState.Parent = this.txb_precio;
-            this.txb_precio.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.txb_precio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txb_precio.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txb_precio.HoverState.Parent = this.txb_precio;
-            this.txb_precio.Location = new System.Drawing.Point(214, 396);
-            this.txb_precio.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txb_precio.Name = "txb_precio";
-            this.txb_precio.PasswordChar = '\0';
-            this.txb_precio.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(137)))), ((int)(((byte)(129)))));
-            this.txb_precio.PlaceholderText = "";
-            this.txb_precio.SelectedText = "";
-            this.txb_precio.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(41)))), ((int)(((byte)(31)))));
-            this.txb_precio.ShadowDecoration.Depth = 15;
-            this.txb_precio.ShadowDecoration.Enabled = true;
-            this.txb_precio.ShadowDecoration.Parent = this.txb_precio;
-            this.txb_precio.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(3);
-            this.txb_precio.Size = new System.Drawing.Size(123, 23);
-            this.txb_precio.TabIndex = 64;
-            this.txb_precio.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // cantidad_lbl
             // 
             this.cantidad_lbl.BackColor = System.Drawing.Color.Transparent;
             this.cantidad_lbl.Enabled = false;
             this.cantidad_lbl.Font = new System.Drawing.Font("Montserrat Alternates", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cantidad_lbl.Location = new System.Drawing.Point(231, 351);
-            this.cantidad_lbl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cantidad_lbl.Location = new System.Drawing.Point(266, 285);
+            this.cantidad_lbl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cantidad_lbl.Name = "cantidad_lbl";
-            this.cantidad_lbl.Size = new System.Drawing.Size(62, 30);
+            this.cantidad_lbl.Size = new System.Drawing.Size(50, 24);
             this.cantidad_lbl.TabIndex = 63;
             this.cantidad_lbl.Text = "Stock";
             // 
-            // prov_cbx
+            // cbx_prov
             // 
-            this.prov_cbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(225)))), ((int)(((byte)(220)))));
-            this.prov_cbx.FormattingEnabled = true;
-            this.prov_cbx.Location = new System.Drawing.Point(34, 451);
-            this.prov_cbx.Name = "prov_cbx";
-            this.prov_cbx.Size = new System.Drawing.Size(114, 24);
-            this.prov_cbx.TabIndex = 62;
+            this.cbx_prov.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(225)))), ((int)(((byte)(220)))));
+            this.cbx_prov.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbx_prov.FormattingEnabled = true;
+            this.cbx_prov.Location = new System.Drawing.Point(405, 314);
+            this.cbx_prov.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbx_prov.Name = "cbx_prov";
+            this.cbx_prov.Size = new System.Drawing.Size(86, 28);
+            this.cbx_prov.TabIndex = 62;
+            this.cbx_prov.SelectedIndexChanged += new System.EventHandler(this.prov_cbx_SelectedIndexChanged);
             // 
             // prov_lbl
             // 
             this.prov_lbl.BackColor = System.Drawing.Color.Transparent;
             this.prov_lbl.Enabled = false;
             this.prov_lbl.Font = new System.Drawing.Font("Montserrat Alternates", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.prov_lbl.Location = new System.Drawing.Point(34, 416);
-            this.prov_lbl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.prov_lbl.Location = new System.Drawing.Point(401, 285);
+            this.prov_lbl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.prov_lbl.Name = "prov_lbl";
-            this.prov_lbl.Size = new System.Drawing.Size(114, 30);
+            this.prov_lbl.Size = new System.Drawing.Size(90, 24);
             this.prov_lbl.TabIndex = 61;
             this.prov_lbl.Text = "Proveedor";
             // 
@@ -263,21 +227,23 @@ namespace DojaCafe
             this.ID_lbl.BackColor = System.Drawing.Color.Transparent;
             this.ID_lbl.Enabled = false;
             this.ID_lbl.Font = new System.Drawing.Font("Montserrat Alternates", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ID_lbl.Location = new System.Drawing.Point(34, 351);
-            this.ID_lbl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ID_lbl.Location = new System.Drawing.Point(57, 285);
+            this.ID_lbl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ID_lbl.Name = "ID_lbl";
-            this.ID_lbl.Size = new System.Drawing.Size(173, 30);
+            this.ID_lbl.Size = new System.Drawing.Size(137, 24);
             this.ID_lbl.TabIndex = 60;
             this.ID_lbl.Text = "ID del producto";
             // 
-            // id_cbx
+            // cbx_id
             // 
-            this.id_cbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(225)))), ((int)(((byte)(220)))));
-            this.id_cbx.FormattingEnabled = true;
-            this.id_cbx.Location = new System.Drawing.Point(34, 386);
-            this.id_cbx.Name = "id_cbx";
-            this.id_cbx.Size = new System.Drawing.Size(114, 24);
-            this.id_cbx.TabIndex = 59;
+            this.cbx_id.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(225)))), ((int)(((byte)(220)))));
+            this.cbx_id.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbx_id.FormattingEnabled = true;
+            this.cbx_id.Location = new System.Drawing.Point(57, 313);
+            this.cbx_id.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbx_id.Name = "cbx_id";
+            this.cbx_id.Size = new System.Drawing.Size(86, 28);
+            this.cbx_id.TabIndex = 59;
             // 
             // btn_guardar
             // 
@@ -285,7 +251,7 @@ namespace DojaCafe
             this.btn_guardar.AutoRoundedCorners = true;
             this.btn_guardar.BackColor = System.Drawing.Color.Transparent;
             this.btn_guardar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(44)))), ((int)(((byte)(34)))));
-            this.btn_guardar.BorderRadius = 22;
+            this.btn_guardar.BorderRadius = 17;
             this.btn_guardar.BorderThickness = 1;
             this.btn_guardar.CheckedState.Parent = this.btn_guardar;
             this.btn_guardar.CustomImages.Parent = this.btn_guardar;
@@ -295,15 +261,14 @@ namespace DojaCafe
             this.btn_guardar.HoverState.Parent = this.btn_guardar;
             this.btn_guardar.Image = ((System.Drawing.Image)(resources.GetObject("btn_guardar.Image")));
             this.btn_guardar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_guardar.Location = new System.Drawing.Point(644, 429);
-            this.btn_guardar.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_guardar.Location = new System.Drawing.Point(601, 285);
             this.btn_guardar.Name = "btn_guardar";
             this.btn_guardar.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(50)))), ((int)(((byte)(39)))));
             this.btn_guardar.ShadowDecoration.BorderRadius = 22;
             this.btn_guardar.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(44)))), ((int)(((byte)(34)))));
             this.btn_guardar.ShadowDecoration.Enabled = true;
             this.btn_guardar.ShadowDecoration.Parent = this.btn_guardar;
-            this.btn_guardar.Size = new System.Drawing.Size(151, 46);
+            this.btn_guardar.Size = new System.Drawing.Size(113, 37);
             this.btn_guardar.TabIndex = 58;
             this.btn_guardar.Text = "Guardar";
             this.btn_guardar.TextOffset = new System.Drawing.Point(10, 0);
@@ -312,13 +277,12 @@ namespace DojaCafe
             // 
             this.pbx_clipboard.FillColor = System.Drawing.Color.White;
             this.pbx_clipboard.Image = ((System.Drawing.Image)(resources.GetObject("pbx_clipboard.Image")));
-            this.pbx_clipboard.Location = new System.Drawing.Point(37, 100);
-            this.pbx_clipboard.Margin = new System.Windows.Forms.Padding(4);
+            this.pbx_clipboard.Location = new System.Drawing.Point(28, 81);
             this.pbx_clipboard.Name = "pbx_clipboard";
             this.pbx_clipboard.ShadowDecoration.BorderRadius = 3;
             this.pbx_clipboard.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.pbx_clipboard.ShadowDecoration.Parent = this.pbx_clipboard;
-            this.pbx_clipboard.Size = new System.Drawing.Size(32, 30);
+            this.pbx_clipboard.Size = new System.Drawing.Size(24, 24);
             this.pbx_clipboard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pbx_clipboard.TabIndex = 57;
             this.pbx_clipboard.TabStop = false;
@@ -329,12 +293,13 @@ namespace DojaCafe
             this.lbl_productos.BackColor = System.Drawing.Color.Transparent;
             this.lbl_productos.Enabled = false;
             this.lbl_productos.Font = new System.Drawing.Font("Montserrat Alternates", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_productos.Location = new System.Drawing.Point(76, 93);
-            this.lbl_productos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lbl_productos.ForeColor = System.Drawing.Color.Black;
+            this.lbl_productos.Location = new System.Drawing.Point(57, 76);
+            this.lbl_productos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lbl_productos.Name = "lbl_productos";
-            this.lbl_productos.Size = new System.Drawing.Size(72, 39);
+            this.lbl_productos.Size = new System.Drawing.Size(109, 32);
             this.lbl_productos.TabIndex = 56;
-            this.lbl_productos.Text = "Lista";
+            this.lbl_productos.Text = "Articulos";
             // 
             // dgv_productos
             // 
@@ -364,8 +329,8 @@ namespace DojaCafe
             this.dgv_productos.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_productos.EnableHeadersVisualStyles = false;
             this.dgv_productos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgv_productos.Location = new System.Drawing.Point(30, 136);
-            this.dgv_productos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgv_productos.Location = new System.Drawing.Point(22, 110);
+            this.dgv_productos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgv_productos.MultiSelect = false;
             this.dgv_productos.Name = "dgv_productos";
             this.dgv_productos.ReadOnly = true;
@@ -373,7 +338,7 @@ namespace DojaCafe
             this.dgv_productos.RowHeadersWidth = 51;
             this.dgv_productos.RowTemplate.Height = 24;
             this.dgv_productos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_productos.Size = new System.Drawing.Size(584, 211);
+            this.dgv_productos.Size = new System.Drawing.Size(469, 171);
             this.dgv_productos.TabIndex = 55;
             this.dgv_productos.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.dgv_productos.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -400,28 +365,26 @@ namespace DojaCafe
             // 
             // Inventario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(110)))), ((int)(((byte)(101)))));
-            this.ClientSize = new System.Drawing.Size(823, 491);
+            this.ClientSize = new System.Drawing.Size(726, 440);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.dtp_fecha);
             this.Controls.Add(this.btn_mod);
             this.Controls.Add(this.btn_add);
             this.Controls.Add(this.fecha_lbl);
-            this.Controls.Add(this.txb_precio);
             this.Controls.Add(this.cantidad_lbl);
-            this.Controls.Add(this.prov_cbx);
+            this.Controls.Add(this.cbx_prov);
             this.Controls.Add(this.prov_lbl);
             this.Controls.Add(this.ID_lbl);
-            this.Controls.Add(this.id_cbx);
+            this.Controls.Add(this.cbx_id);
             this.Controls.Add(this.btn_guardar);
             this.Controls.Add(this.pbx_clipboard);
             this.Controls.Add(this.lbl_productos);
             this.Controls.Add(this.dgv_productos);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(110)))), ((int)(((byte)(101)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Inventario";
             this.Text = "Inventario";
             this.guna2Panel1.ResumeLayout(false);
@@ -444,12 +407,11 @@ namespace DojaCafe
         private Guna.UI2.WinForms.Guna2Button btn_mod;
         private Guna.UI2.WinForms.Guna2Button btn_add;
         private Guna.UI2.WinForms.Guna2HtmlLabel fecha_lbl;
-        private Guna.UI2.WinForms.Guna2TextBox txb_precio;
         private Guna.UI2.WinForms.Guna2HtmlLabel cantidad_lbl;
-        private System.Windows.Forms.ComboBox prov_cbx;
+        private System.Windows.Forms.ComboBox cbx_prov;
         private Guna.UI2.WinForms.Guna2HtmlLabel prov_lbl;
         private Guna.UI2.WinForms.Guna2HtmlLabel ID_lbl;
-        private System.Windows.Forms.ComboBox id_cbx;
+        private System.Windows.Forms.ComboBox cbx_id;
         private Guna.UI2.WinForms.Guna2Button btn_guardar;
         private Guna.UI2.WinForms.Guna2CirclePictureBox pbx_clipboard;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbl_productos;

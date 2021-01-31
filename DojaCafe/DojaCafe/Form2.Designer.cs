@@ -61,7 +61,7 @@ namespace DojaCafe
             this.lbl_productos.BackColor = System.Drawing.Color.Transparent;
             this.lbl_productos.Enabled = false;
             this.lbl_productos.Font = new System.Drawing.Font("Montserrat Alternates", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_productos.Location = new System.Drawing.Point(427, 65);
+            this.lbl_productos.Location = new System.Drawing.Point(536, 93);
             this.lbl_productos.Margin = new System.Windows.Forms.Padding(2);
             this.lbl_productos.Name = "lbl_productos";
             this.lbl_productos.Size = new System.Drawing.Size(58, 31);
@@ -174,6 +174,7 @@ namespace DojaCafe
             this.txtb_nombre.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtb_nombre.HoverState.Parent = this.txtb_nombre;
             this.txtb_nombre.Location = new System.Drawing.Point(42, 178);
+            this.txtb_nombre.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtb_nombre.Name = "txtb_nombre";
             this.txtb_nombre.PasswordChar = '\0';
             this.txtb_nombre.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(137)))), ((int)(((byte)(129)))));
@@ -208,6 +209,7 @@ namespace DojaCafe
             this.txtb_id.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtb_id.HoverState.Parent = this.txtb_id;
             this.txtb_id.Location = new System.Drawing.Point(42, 96);
+            this.txtb_id.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtb_id.Name = "txtb_id";
             this.txtb_id.PasswordChar = '\0';
             this.txtb_id.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(137)))), ((int)(((byte)(129)))));
@@ -250,7 +252,7 @@ namespace DojaCafe
             this.dgv_productos.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_productos.EnableHeadersVisualStyles = false;
             this.dgv_productos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgv_productos.Location = new System.Drawing.Point(356, 100);
+            this.dgv_productos.Location = new System.Drawing.Point(437, 131);
             this.dgv_productos.Margin = new System.Windows.Forms.Padding(2);
             this.dgv_productos.MultiSelect = false;
             this.dgv_productos.Name = "dgv_productos";
@@ -259,7 +261,7 @@ namespace DojaCafe
             this.dgv_productos.RowHeadersWidth = 51;
             this.dgv_productos.RowTemplate.Height = 24;
             this.dgv_productos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_productos.Size = new System.Drawing.Size(234, 107);
+            this.dgv_productos.Size = new System.Drawing.Size(234, 132);
             this.dgv_productos.TabIndex = 1;
             this.dgv_productos.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.dgv_productos.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -305,6 +307,7 @@ namespace DojaCafe
             this.txb_desc.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txb_desc.HoverState.Parent = this.txb_desc;
             this.txb_desc.Location = new System.Drawing.Point(42, 339);
+            this.txb_desc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txb_desc.Name = "txb_desc";
             this.txb_desc.PasswordChar = '\0';
             this.txb_desc.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(137)))), ((int)(((byte)(129)))));
@@ -322,7 +325,7 @@ namespace DojaCafe
             // 
             this.pbx_clipboard.FillColor = System.Drawing.Color.White;
             this.pbx_clipboard.Image = ((System.Drawing.Image)(resources.GetObject("pbx_clipboard.Image")));
-            this.pbx_clipboard.Location = new System.Drawing.Point(392, 68);
+            this.pbx_clipboard.Location = new System.Drawing.Point(501, 96);
             this.pbx_clipboard.Name = "pbx_clipboard";
             this.pbx_clipboard.ShadowDecoration.BorderRadius = 3;
             this.pbx_clipboard.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -349,7 +352,7 @@ namespace DojaCafe
             this.btn_add.HoverState.Parent = this.btn_add;
             this.btn_add.Image = ((System.Drawing.Image)(resources.GetObject("btn_add.Image")));
             this.btn_add.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_add.Location = new System.Drawing.Point(356, 250);
+            this.btn_add.Location = new System.Drawing.Point(437, 281);
             this.btn_add.Name = "btn_add";
             this.btn_add.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(50)))), ((int)(((byte)(39)))));
             this.btn_add.ShadowDecoration.BorderRadius = 22;
@@ -377,7 +380,7 @@ namespace DojaCafe
             this.btn_delete.HoverState.Parent = this.btn_delete;
             this.btn_delete.Image = ((System.Drawing.Image)(resources.GetObject("btn_delete.Image")));
             this.btn_delete.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_delete.Location = new System.Drawing.Point(356, 293);
+            this.btn_delete.Location = new System.Drawing.Point(437, 339);
             this.btn_delete.Name = "btn_delete";
             this.btn_delete.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(50)))), ((int)(((byte)(39)))));
             this.btn_delete.ShadowDecoration.BorderRadius = 22;
@@ -405,7 +408,7 @@ namespace DojaCafe
             this.btn_mod.HoverState.Parent = this.btn_mod;
             this.btn_mod.Image = ((System.Drawing.Image)(resources.GetObject("btn_mod.Image")));
             this.btn_mod.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_mod.Location = new System.Drawing.Point(492, 250);
+            this.btn_mod.Location = new System.Drawing.Point(573, 281);
             this.btn_mod.Name = "btn_mod";
             this.btn_mod.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(50)))), ((int)(((byte)(39)))));
             this.btn_mod.ShadowDecoration.BorderRadius = 22;
@@ -433,7 +436,7 @@ namespace DojaCafe
             this.btn_guardar.HoverState.Parent = this.btn_guardar;
             this.btn_guardar.Image = ((System.Drawing.Image)(resources.GetObject("btn_guardar.Image")));
             this.btn_guardar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_guardar.Location = new System.Drawing.Point(492, 293);
+            this.btn_guardar.Location = new System.Drawing.Point(573, 339);
             this.btn_guardar.Name = "btn_guardar";
             this.btn_guardar.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(50)))), ((int)(((byte)(39)))));
             this.btn_guardar.ShadowDecoration.BorderRadius = 22;
@@ -452,16 +455,16 @@ namespace DojaCafe
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(617, 62);
+            this.guna2Panel1.Size = new System.Drawing.Size(726, 62);
             this.guna2Panel1.TabIndex = 31;
             // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.Location = new System.Drawing.Point(0, -71);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(0, -98);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(617, 334);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(726, 403);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
@@ -472,7 +475,7 @@ namespace DojaCafe
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(165)))), ((int)(((byte)(152)))));
-            this.ClientSize = new System.Drawing.Size(617, 399);
+            this.ClientSize = new System.Drawing.Size(726, 440);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.btn_guardar);
             this.Controls.Add(this.btn_mod);
