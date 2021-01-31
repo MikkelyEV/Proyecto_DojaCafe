@@ -103,8 +103,8 @@ namespace DojaCafe
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
-            panel_productos.Controls.Add(childForm);
-            panel_productos.Tag = childForm;
+            panel_menu.Controls.Add(childForm);
+            panel_menu.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
 
@@ -112,6 +112,10 @@ namespace DojaCafe
         private void panel_productos_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void boton_inventario_Click(object sender, EventArgs e)
+        {
         }
     }
 }

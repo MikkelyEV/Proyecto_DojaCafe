@@ -120,17 +120,10 @@
   <metadata name="forma_menu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <metadata name="panel_menu.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="boton_sesion.CustomImages.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAARtJREFUSEvd
-        1T9PwkAcxvHqwGqCKyGBzRfAG4CNgYXEF8DAe2DDxAUXRkLgDTC66FtwQAZWEsKGcWBg0kT+fB/SI+WU
-        2sJ10Cf5BO7a6+/Sa6/ev0sNQ3xi41uiiLPTgrlokJMCN1jhA1Wk4DR1aLb9XSs813jCFPeINJkmVEC/
-        v8W+lS/IIDRxCgygc1Vo5v9/RwlHc0qBW6Tx7Le/0MAFvuWnAhWMocXXMZsKKJfQuDXU/4grHMQuUIBm
-        FLxg0BvyCKaMBXR8goN1sQu0oXYPcR7ZHF6hsV11mLgsMILGdtRhYhdwcYuy2McuoMRZ5DvEWuSwOHtM
-        jyXxF02z1LlGpK3ilM1ujgdEesoS366VRD84Jol+Mv9iPG8LlYWQugkiqukAAAAASUVORK5CYII=
-</value>
-  </data>
   <data name="boton_empleados.CustomImages.CheckedImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAZxJREFUSEvF
@@ -524,6 +517,16 @@
         gwoUPEN5nuQKFLX3LkJwAE2hj0Qx01dNHCzMoAPUFGZnqrsEg9fTitkPNIdiR3lNzDBLwgsPc+UzG8tK
         BtkXr7CVrDMwq1fDg6xkmPWKyKtDA9PXxqgm7IFXnUHs900RiZ7B0metsFTtGZh8mHgnxY4qRexo5w/B
         bYriF3nxP+9EQCsoAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="boton_sesion.CustomImages.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAARtJREFUSEvd
+        1T9PwkAcxvHqwGqCKyGBzRfAG4CNgYXEF8DAe2DDxAUXRkLgDTC66FtwQAZWEsKGcWBg0kT+fB/SI+WU
+        2sJ10Cf5BO7a6+/Sa6/ev0sNQ3xi41uiiLPTgrlokJMCN1jhA1Wk4DR1aLb9XSs813jCFPeINJkmVEC/
+        v8W+lS/IIDRxCgygc1Vo5v9/RwlHc0qBW6Tx7Le/0MAFvuWnAhWMocXXMZsKKJfQuDXU/4grHMQuUIBm
+        FLxg0BvyCKaMBXR8goN1sQu0oXYPcR7ZHF6hsV11mLgsMILGdtRhYhdwcYuy2McuoMRZ5DvEWuSwOHtM
+        jyXxF02z1LlGpK3ilM1ujgdEesoS366VRD84Jol+Mv9iPG8LlYWQugkiqukAAAAASUVORK5CYII=
 </value>
   </data>
   <metadata name="control_arrastre.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
