@@ -48,9 +48,9 @@ namespace DojaCafe
             this.panel_usuario = new Guna.UI2.WinForms.Guna2Panel();
             this.control_arrastre = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.panel_productos = new Guna.UI2.WinForms.Guna2Panel();
             this.foto_empleado = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.panel_menu = new Guna.UI2.WinForms.Guna2Panel();
             this.panel_principal.SuspendLayout();
             this.panel_izq.SuspendLayout();
             this.panel_superior.SuspendLayout();
@@ -154,6 +154,7 @@ namespace DojaCafe
             // 
             // boton_empleados
             // 
+            this.boton_empleados.Animated = true;
             this.boton_empleados.BackColor = System.Drawing.Color.Transparent;
             this.boton_empleados.BorderColor = System.Drawing.Color.Transparent;
             this.boton_empleados.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
@@ -184,6 +185,7 @@ namespace DojaCafe
             // 
             // boton_venta
             // 
+            this.boton_venta.Animated = true;
             this.boton_venta.BackColor = System.Drawing.Color.Transparent;
             this.boton_venta.BorderColor = System.Drawing.Color.Transparent;
             this.boton_venta.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
@@ -214,6 +216,7 @@ namespace DojaCafe
             // 
             // boton_inventario
             // 
+            this.boton_inventario.Animated = true;
             this.boton_inventario.BackColor = System.Drawing.Color.Transparent;
             this.boton_inventario.BorderColor = System.Drawing.Color.Transparent;
             this.boton_inventario.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
@@ -240,9 +243,11 @@ namespace DojaCafe
             this.boton_inventario.TabIndex = 3;
             this.boton_inventario.Text = "INVENTARIO";
             this.boton_inventario.UseTransparentBackground = true;
+            this.boton_inventario.Click += new System.EventHandler(this.boton_inventario_Click);
             // 
             // boton_productos
             // 
+            this.boton_productos.Animated = true;
             this.boton_productos.BackColor = System.Drawing.Color.Transparent;
             this.boton_productos.BorderColor = System.Drawing.Color.Transparent;
             this.boton_productos.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
@@ -306,9 +311,11 @@ namespace DojaCafe
             this.panel_superior.Controls.Add(this.boton_sesion);
             this.panel_superior.Controls.Add(this.panel_usuario);
             this.panel_superior.Controls.Add(this.guna2DateTimePicker1);
-            this.panel_superior.Location = new System.Drawing.Point(187, 0);
+            this.panel_superior.Location = new System.Drawing.Point(184, 0);
             this.panel_superior.Name = "panel_superior";
+            this.panel_superior.ShadowDecoration.Enabled = true;
             this.panel_superior.ShadowDecoration.Parent = this.panel_superior;
+            this.panel_superior.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(2, 0, 5, 5);
             this.panel_superior.Size = new System.Drawing.Size(615, 50);
             this.panel_superior.TabIndex = 2;
             // 
@@ -358,15 +365,6 @@ namespace DojaCafe
             this.guna2HtmlLabel1.TabIndex = 8;
             this.guna2HtmlLabel1.Text = null;
             // 
-            // panel_productos
-            // 
-            this.panel_productos.Location = new System.Drawing.Point(187, 51);
-            this.panel_productos.Name = "panel_productos";
-            this.panel_productos.ShadowDecoration.Parent = this.panel_productos;
-            this.panel_productos.Size = new System.Drawing.Size(611, 399);
-            this.panel_productos.TabIndex = 15;
-            this.panel_productos.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_productos_Paint);
-            // 
             // foto_empleado
             // 
             this.foto_empleado.Image = global::DojaCafe.Properties.Resources.worker_woman_coronavirus_512__1_;
@@ -392,16 +390,24 @@ namespace DojaCafe
             this.guna2PictureBox1.TabStop = false;
             this.guna2PictureBox1.UseTransparentBackground = true;
             // 
+            // panel_menu
+            // 
+            this.panel_menu.Location = new System.Drawing.Point(184, 51);
+            this.panel_menu.Name = "panel_menu";
+            this.panel_menu.ShadowDecoration.Parent = this.panel_menu;
+            this.panel_menu.Size = new System.Drawing.Size(617, 399);
+            this.panel_menu.TabIndex = 9;
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(225)))), ((int)(((byte)(220)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panel_menu);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.panel_superior);
             this.Controls.Add(this.panel_principal);
-            this.Controls.Add(this.panel_productos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -443,6 +449,6 @@ namespace DojaCafe
         private Guna.UI2.WinForms.Guna2DragControl control_arrastre;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2Panel panel_productos;
+        private Guna.UI2.WinForms.Guna2Panel panel_menu;
     }
 }
