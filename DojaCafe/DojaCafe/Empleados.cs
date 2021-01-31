@@ -71,5 +71,11 @@ namespace DojaCafe
         {
 
         }
+
+        private void btn_bitacora_Click(object sender, EventArgs e)
+        {
+            Bitacora_Empleado workers = new Bitacora_Empleado();
+            workers.Show();
+        }
     }
 }

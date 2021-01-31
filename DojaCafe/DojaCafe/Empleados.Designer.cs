@@ -55,6 +55,7 @@ namespace DojaCafe
             this.btn_add = new Guna.UI2.WinForms.Guna2Button();
             this.btn_guardar = new Guna.UI2.WinForms.Guna2Button();
             this.btn_delete = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_bitacora = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -487,7 +488,7 @@ namespace DojaCafe
             this.btn_mod.HoverState.Parent = this.btn_mod;
             this.btn_mod.Image = ((System.Drawing.Image)(resources.GetObject("btn_mod.Image")));
             this.btn_mod.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_mod.Location = new System.Drawing.Point(449, 337);
+            this.btn_mod.Location = new System.Drawing.Point(317, 391);
             this.btn_mod.Name = "btn_mod";
             this.btn_mod.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(50)))), ((int)(((byte)(39)))));
             this.btn_mod.ShadowDecoration.BorderRadius = 22;
@@ -515,7 +516,7 @@ namespace DojaCafe
             this.btn_add.HoverState.Parent = this.btn_add;
             this.btn_add.Image = ((System.Drawing.Image)(resources.GetObject("btn_add.Image")));
             this.btn_add.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_add.Location = new System.Drawing.Point(449, 391);
+            this.btn_add.Location = new System.Drawing.Point(27, 391);
             this.btn_add.Name = "btn_add";
             this.btn_add.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(50)))), ((int)(((byte)(39)))));
             this.btn_add.ShadowDecoration.BorderRadius = 22;
@@ -543,7 +544,7 @@ namespace DojaCafe
             this.btn_guardar.HoverState.Parent = this.btn_guardar;
             this.btn_guardar.Image = ((System.Drawing.Image)(resources.GetObject("btn_guardar.Image")));
             this.btn_guardar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_guardar.Location = new System.Drawing.Point(592, 337);
+            this.btn_guardar.Location = new System.Drawing.Point(592, 313);
             this.btn_guardar.Name = "btn_guardar";
             this.btn_guardar.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(50)))), ((int)(((byte)(39)))));
             this.btn_guardar.ShadowDecoration.BorderRadius = 22;
@@ -571,7 +572,7 @@ namespace DojaCafe
             this.btn_delete.HoverState.Parent = this.btn_delete;
             this.btn_delete.Image = ((System.Drawing.Image)(resources.GetObject("btn_delete.Image")));
             this.btn_delete.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_delete.Location = new System.Drawing.Point(592, 391);
+            this.btn_delete.Location = new System.Drawing.Point(168, 391);
             this.btn_delete.Name = "btn_delete";
             this.btn_delete.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(50)))), ((int)(((byte)(39)))));
             this.btn_delete.ShadowDecoration.BorderRadius = 22;
@@ -583,12 +584,42 @@ namespace DojaCafe
             this.btn_delete.Text = "Eliminar";
             this.btn_delete.TextOffset = new System.Drawing.Point(10, 0);
             // 
+            // btn_bitacora
+            // 
+            this.btn_bitacora.Animated = true;
+            this.btn_bitacora.AutoRoundedCorners = true;
+            this.btn_bitacora.BackColor = System.Drawing.Color.Transparent;
+            this.btn_bitacora.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(151)))), ((int)(((byte)(145)))));
+            this.btn_bitacora.BorderRadius = 17;
+            this.btn_bitacora.BorderThickness = 1;
+            this.btn_bitacora.CheckedState.Parent = this.btn_bitacora;
+            this.btn_bitacora.CustomImages.Parent = this.btn_bitacora;
+            this.btn_bitacora.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(106)))), ((int)(((byte)(88)))));
+            this.btn_bitacora.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_bitacora.ForeColor = System.Drawing.Color.White;
+            this.btn_bitacora.HoverState.Parent = this.btn_bitacora;
+            this.btn_bitacora.Image = ((System.Drawing.Image)(resources.GetObject("btn_bitacora.Image")));
+            this.btn_bitacora.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_bitacora.Location = new System.Drawing.Point(592, 371);
+            this.btn_bitacora.Name = "btn_bitacora";
+            this.btn_bitacora.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(50)))), ((int)(((byte)(39)))));
+            this.btn_bitacora.ShadowDecoration.BorderRadius = 22;
+            this.btn_bitacora.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(44)))), ((int)(((byte)(34)))));
+            this.btn_bitacora.ShadowDecoration.Enabled = true;
+            this.btn_bitacora.ShadowDecoration.Parent = this.btn_bitacora;
+            this.btn_bitacora.Size = new System.Drawing.Size(113, 37);
+            this.btn_bitacora.TabIndex = 72;
+            this.btn_bitacora.Text = "Visualizar";
+            this.btn_bitacora.TextOffset = new System.Drawing.Point(10, 0);
+            this.btn_bitacora.Click += new System.EventHandler(this.btn_bitacora_Click);
+            // 
             // Empleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(61)))), ((int)(((byte)(55)))));
             this.ClientSize = new System.Drawing.Size(726, 440);
+            this.Controls.Add(this.btn_bitacora);
             this.Controls.Add(this.btn_delete);
             this.Controls.Add(this.btn_mod);
             this.Controls.Add(this.btn_add);
@@ -648,5 +679,6 @@ namespace DojaCafe
         private Guna.UI2.WinForms.Guna2Button btn_add;
         private Guna.UI2.WinForms.Guna2Button btn_guardar;
         private Guna.UI2.WinForms.Guna2Button btn_delete;
+        private Guna.UI2.WinForms.Guna2Button btn_bitacora;
     }
 }

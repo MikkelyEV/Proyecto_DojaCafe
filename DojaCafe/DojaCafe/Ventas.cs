@@ -21,5 +21,11 @@ namespace DojaCafe
         {
 
         }
+
+        private void btn_bitacora_Click(object sender, EventArgs e)
+        {
+            Bitacora_ventas bitacora_ventas = new Bitacora_ventas();
+            bitacora_ventas.Show();
+        }
     }
 }

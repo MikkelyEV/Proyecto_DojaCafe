@@ -49,6 +49,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bitacora_Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bitacora_Clientes.Designer.cs">
+      <DependentUpon>Bitacora_Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bitacora_Empleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bitacora_Empleado.Designer.cs">
+      <DependentUpon>Bitacora_Empleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bitacora_ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bitacora_ventas.Designer.cs">
+      <DependentUpon>Bitacora_ventas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +117,15 @@
     <Compile Include="Ventas.Designer.cs">
       <DependentUpon>Ventas.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Bitacora_Clientes.resx">
+      <DependentUpon>Bitacora_Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bitacora_Empleado.resx">
+      <DependentUpon>Bitacora_Empleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bitacora_ventas.resx">
+      <DependentUpon>Bitacora_ventas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cliente.resx">
       <DependentUpon>Cliente.cs</DependentUpon>
     </EmbeddedResource>

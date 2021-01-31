@@ -64,7 +64,7 @@ namespace DojaCafe
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.Location = new System.Drawing.Point(0, -97);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(-6, -192);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
             this.guna2PictureBox1.Size = new System.Drawing.Size(729, 415);
@@ -99,6 +99,7 @@ namespace DojaCafe
             this.btn_bitacora.TabIndex = 46;
             this.btn_bitacora.Text = "Bitacora";
             this.btn_bitacora.TextOffset = new System.Drawing.Point(10, 0);
+            this.btn_bitacora.Click += new System.EventHandler(this.btn_bitacora_Click);
             // 
             // btn_Registrar
             // 
@@ -134,7 +135,7 @@ namespace DojaCafe
             this.guna2HtmlLabel3.Enabled = false;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Montserrat Alternates", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.Location = new System.Drawing.Point(185, 361);
-            this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(47, 24);
             this.guna2HtmlLabel3.TabIndex = 41;
@@ -146,7 +147,7 @@ namespace DojaCafe
             this.guna2HtmlLabel2.Enabled = false;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Montserrat Alternates", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(37, 189);
-            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(116, 24);
             this.guna2HtmlLabel2.TabIndex = 39;
@@ -158,7 +159,7 @@ namespace DojaCafe
             this.nombre_lbl.Enabled = false;
             this.nombre_lbl.Font = new System.Drawing.Font("Montserrat Alternates", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nombre_lbl.Location = new System.Drawing.Point(47, 95);
-            this.nombre_lbl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nombre_lbl.Margin = new System.Windows.Forms.Padding(2);
             this.nombre_lbl.Name = "nombre_lbl";
             this.nombre_lbl.Size = new System.Drawing.Size(44, 24);
             this.nombre_lbl.TabIndex = 38;
@@ -185,7 +186,7 @@ namespace DojaCafe
             this.txb_cant.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txb_cant.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txb_cant.HoverState.Parent = this.txb_cant;
-            this.txb_cant.Location = new System.Drawing.Point(291, 311);
+            this.txb_cant.Location = new System.Drawing.Point(323, 311);
             this.txb_cant.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txb_cant.Name = "txb_cant";
             this.txb_cant.PasswordChar = '\0';
@@ -242,8 +243,8 @@ namespace DojaCafe
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Enabled = false;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Montserrat Alternates", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(263, 189);
-            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(298, 189);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(142, 24);
             this.guna2HtmlLabel1.TabIndex = 48;
@@ -255,7 +256,7 @@ namespace DojaCafe
             this.guna2HtmlLabel4.Enabled = false;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Montserrat Alternates", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel4.Location = new System.Drawing.Point(37, 281);
-            this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(132, 24);
             this.guna2HtmlLabel4.TabIndex = 50;
@@ -299,7 +300,7 @@ namespace DojaCafe
             this.cbx_empleado.HoverState.Parent = this.cbx_empleado;
             this.cbx_empleado.ItemHeight = 30;
             this.cbx_empleado.ItemsAppearance.Parent = this.cbx_empleado;
-            this.cbx_empleado.Location = new System.Drawing.Point(291, 218);
+            this.cbx_empleado.Location = new System.Drawing.Point(323, 218);
             this.cbx_empleado.Name = "cbx_empleado";
             this.cbx_empleado.ShadowDecoration.Parent = this.cbx_empleado;
             this.cbx_empleado.Size = new System.Drawing.Size(82, 36);
@@ -310,8 +311,8 @@ namespace DojaCafe
             this.lbl_cant.BackColor = System.Drawing.Color.Transparent;
             this.lbl_cant.Enabled = false;
             this.lbl_cant.Font = new System.Drawing.Font("Montserrat Alternates", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_cant.Location = new System.Drawing.Point(291, 282);
-            this.lbl_cant.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lbl_cant.Location = new System.Drawing.Point(323, 282);
+            this.lbl_cant.Margin = new System.Windows.Forms.Padding(2);
             this.lbl_cant.Name = "lbl_cant";
             this.lbl_cant.Size = new System.Drawing.Size(82, 24);
             this.lbl_cant.TabIndex = 54;
@@ -388,7 +389,7 @@ namespace DojaCafe
             this.dtp_fecha.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.dtp_fecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtp_fecha.HoverState.Parent = this.dtp_fecha;
-            this.dtp_fecha.Location = new System.Drawing.Point(287, 125);
+            this.dtp_fecha.Location = new System.Drawing.Point(308, 125);
             this.dtp_fecha.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtp_fecha.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtp_fecha.Name = "dtp_fecha";
