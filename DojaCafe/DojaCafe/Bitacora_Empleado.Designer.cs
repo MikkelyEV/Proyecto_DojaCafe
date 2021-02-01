@@ -34,9 +34,6 @@ namespace DojaCafe
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btn_volver = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_guardar = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_mod = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_delete = new Guna.UI2.WinForms.Guna2Button();
             this.dgv_empleado = new Guna.UI2.WinForms.Guna2DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_empleado)).BeginInit();
             this.SuspendLayout();
@@ -68,90 +65,6 @@ namespace DojaCafe
             this.btn_volver.TabIndex = 72;
             this.btn_volver.Text = "Volver";
             this.btn_volver.TextOffset = new System.Drawing.Point(10, 0);
-            // 
-            // btn_guardar
-            // 
-            this.btn_guardar.Animated = true;
-            this.btn_guardar.AutoRoundedCorners = true;
-            this.btn_guardar.BackColor = System.Drawing.Color.Transparent;
-            this.btn_guardar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(151)))), ((int)(((byte)(145)))));
-            this.btn_guardar.BorderRadius = 17;
-            this.btn_guardar.BorderThickness = 1;
-            this.btn_guardar.CheckedState.Parent = this.btn_guardar;
-            this.btn_guardar.CustomImages.Parent = this.btn_guardar;
-            this.btn_guardar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(119)))), ((int)(((byte)(80)))));
-            this.btn_guardar.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_guardar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(66)))), ((int)(((byte)(65)))));
-            this.btn_guardar.HoverState.Parent = this.btn_guardar;
-            this.btn_guardar.Image = ((System.Drawing.Image)(resources.GetObject("btn_guardar.Image")));
-            this.btn_guardar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_guardar.Location = new System.Drawing.Point(666, 221);
-            this.btn_guardar.Name = "btn_guardar";
-            this.btn_guardar.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(50)))), ((int)(((byte)(39)))));
-            this.btn_guardar.ShadowDecoration.BorderRadius = 22;
-            this.btn_guardar.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(44)))), ((int)(((byte)(34)))));
-            this.btn_guardar.ShadowDecoration.Enabled = true;
-            this.btn_guardar.ShadowDecoration.Parent = this.btn_guardar;
-            this.btn_guardar.Size = new System.Drawing.Size(113, 37);
-            this.btn_guardar.TabIndex = 71;
-            this.btn_guardar.Text = "Guardar";
-            this.btn_guardar.TextOffset = new System.Drawing.Point(10, 0);
-            // 
-            // btn_mod
-            // 
-            this.btn_mod.Animated = true;
-            this.btn_mod.AutoRoundedCorners = true;
-            this.btn_mod.BackColor = System.Drawing.Color.Transparent;
-            this.btn_mod.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(151)))), ((int)(((byte)(145)))));
-            this.btn_mod.BorderRadius = 17;
-            this.btn_mod.BorderThickness = 1;
-            this.btn_mod.CheckedState.Parent = this.btn_mod;
-            this.btn_mod.CustomImages.Parent = this.btn_mod;
-            this.btn_mod.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(119)))), ((int)(((byte)(80)))));
-            this.btn_mod.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_mod.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(66)))), ((int)(((byte)(65)))));
-            this.btn_mod.HoverState.Parent = this.btn_mod;
-            this.btn_mod.Image = ((System.Drawing.Image)(resources.GetObject("btn_mod.Image")));
-            this.btn_mod.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_mod.Location = new System.Drawing.Point(666, 143);
-            this.btn_mod.Name = "btn_mod";
-            this.btn_mod.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(50)))), ((int)(((byte)(39)))));
-            this.btn_mod.ShadowDecoration.BorderRadius = 22;
-            this.btn_mod.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(44)))), ((int)(((byte)(34)))));
-            this.btn_mod.ShadowDecoration.Enabled = true;
-            this.btn_mod.ShadowDecoration.Parent = this.btn_mod;
-            this.btn_mod.Size = new System.Drawing.Size(113, 37);
-            this.btn_mod.TabIndex = 70;
-            this.btn_mod.Text = "Modificar";
-            this.btn_mod.TextOffset = new System.Drawing.Point(10, 0);
-            // 
-            // btn_delete
-            // 
-            this.btn_delete.Animated = true;
-            this.btn_delete.AutoRoundedCorners = true;
-            this.btn_delete.BackColor = System.Drawing.Color.Transparent;
-            this.btn_delete.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(151)))), ((int)(((byte)(145)))));
-            this.btn_delete.BorderRadius = 17;
-            this.btn_delete.BorderThickness = 1;
-            this.btn_delete.CheckedState.Parent = this.btn_delete;
-            this.btn_delete.CustomImages.Parent = this.btn_delete;
-            this.btn_delete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(119)))), ((int)(((byte)(80)))));
-            this.btn_delete.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_delete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(66)))), ((int)(((byte)(65)))));
-            this.btn_delete.HoverState.Parent = this.btn_delete;
-            this.btn_delete.Image = ((System.Drawing.Image)(resources.GetObject("btn_delete.Image")));
-            this.btn_delete.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_delete.Location = new System.Drawing.Point(666, 76);
-            this.btn_delete.Name = "btn_delete";
-            this.btn_delete.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(50)))), ((int)(((byte)(39)))));
-            this.btn_delete.ShadowDecoration.BorderRadius = 22;
-            this.btn_delete.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(44)))), ((int)(((byte)(34)))));
-            this.btn_delete.ShadowDecoration.Enabled = true;
-            this.btn_delete.ShadowDecoration.Parent = this.btn_delete;
-            this.btn_delete.Size = new System.Drawing.Size(113, 37);
-            this.btn_delete.TabIndex = 69;
-            this.btn_delete.Text = "Eliminar";
-            this.btn_delete.TextOffset = new System.Drawing.Point(10, 0);
             // 
             // dgv_empleado
             // 
@@ -218,9 +131,6 @@ namespace DojaCafe
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(183)))), ((int)(((byte)(160)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btn_volver);
-            this.Controls.Add(this.btn_guardar);
-            this.Controls.Add(this.btn_mod);
-            this.Controls.Add(this.btn_delete);
             this.Controls.Add(this.dgv_empleado);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Bitacora_Empleado";
@@ -234,9 +144,6 @@ namespace DojaCafe
         #endregion
 
         private Guna.UI2.WinForms.Guna2Button btn_volver;
-        private Guna.UI2.WinForms.Guna2Button btn_guardar;
-        private Guna.UI2.WinForms.Guna2Button btn_mod;
-        private Guna.UI2.WinForms.Guna2Button btn_delete;
         private Guna.UI2.WinForms.Guna2DataGridView dgv_empleado;
     }
 }

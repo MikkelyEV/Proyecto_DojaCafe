@@ -65,20 +65,19 @@ namespace DojaCafe
             this.guna2Panel1.Controls.Add(this.guna2PictureBox2);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(968, 70);
+            this.guna2Panel1.Size = new System.Drawing.Size(726, 57);
             this.guna2Panel1.TabIndex = 0;
             // 
             // guna2PictureBox2
             // 
             this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
-            this.guna2PictureBox2.Location = new System.Drawing.Point(4, -431);
-            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2PictureBox2.Location = new System.Drawing.Point(3, -350);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
             this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
-            this.guna2PictureBox2.Size = new System.Drawing.Size(968, 644);
+            this.guna2PictureBox2.Size = new System.Drawing.Size(726, 523);
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox2.TabIndex = 2;
             this.guna2PictureBox2.TabStop = false;
@@ -104,8 +103,8 @@ namespace DojaCafe
             this.txb_direccion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(217)))), ((int)(((byte)(175)))));
             this.txb_direccion.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txb_direccion.HoverState.Parent = this.txb_direccion;
-            this.txb_direccion.Location = new System.Drawing.Point(660, 311);
-            this.txb_direccion.Margin = new System.Windows.Forms.Padding(5);
+            this.txb_direccion.Location = new System.Drawing.Point(495, 253);
+            this.txb_direccion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txb_direccion.Name = "txb_direccion";
             this.txb_direccion.PasswordChar = '\0';
             this.txb_direccion.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(137)))), ((int)(((byte)(129)))));
@@ -116,7 +115,7 @@ namespace DojaCafe
             this.txb_direccion.ShadowDecoration.Enabled = true;
             this.txb_direccion.ShadowDecoration.Parent = this.txb_direccion;
             this.txb_direccion.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(3);
-            this.txb_direccion.Size = new System.Drawing.Size(248, 34);
+            this.txb_direccion.Size = new System.Drawing.Size(186, 28);
             this.txb_direccion.TabIndex = 26;
             this.txb_direccion.TextChanged += new System.EventHandler(this.txb_desc_TextChanged);
             // 
@@ -126,10 +125,10 @@ namespace DojaCafe
             this.guna2HtmlLabel3.Enabled = false;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Montserrat Alternates", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(252)))));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(660, 274);
-            this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(495, 223);
+            this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(105, 30);
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(82, 24);
             this.guna2HtmlLabel3.TabIndex = 30;
             this.guna2HtmlLabel3.Text = "Dirección";
             this.guna2HtmlLabel3.Click += new System.EventHandler(this.guna2HtmlLabel3_Click);
@@ -140,10 +139,10 @@ namespace DojaCafe
             this.Precio_lbl.Enabled = false;
             this.Precio_lbl.Font = new System.Drawing.Font("Montserrat Alternates", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Precio_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(252)))));
-            this.Precio_lbl.Location = new System.Drawing.Point(36, 274);
-            this.Precio_lbl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Precio_lbl.Location = new System.Drawing.Point(27, 223);
+            this.Precio_lbl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Precio_lbl.Name = "Precio_lbl";
-            this.Precio_lbl.Size = new System.Drawing.Size(96, 30);
+            this.Precio_lbl.Size = new System.Drawing.Size(76, 24);
             this.Precio_lbl.TabIndex = 29;
             this.Precio_lbl.Text = "Teléfono";
             this.Precio_lbl.Click += new System.EventHandler(this.Precio_lbl_Click);
@@ -154,10 +153,10 @@ namespace DojaCafe
             this.guna2HtmlLabel2.Enabled = false;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Montserrat Alternates", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(252)))));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(36, 183);
-            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(27, 149);
+            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(244, 30);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(194, 24);
             this.guna2HtmlLabel2.TabIndex = 28;
             this.guna2HtmlLabel2.Text = "Nombre del empleado";
             this.guna2HtmlLabel2.Click += new System.EventHandler(this.guna2HtmlLabel2_Click);
@@ -168,10 +167,10 @@ namespace DojaCafe
             this.nombre_lbl.Enabled = false;
             this.nombre_lbl.Font = new System.Drawing.Font("Montserrat Alternates", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nombre_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(252)))));
-            this.nombre_lbl.Location = new System.Drawing.Point(36, 102);
-            this.nombre_lbl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.nombre_lbl.Location = new System.Drawing.Point(27, 83);
+            this.nombre_lbl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.nombre_lbl.Name = "nombre_lbl";
-            this.nombre_lbl.Size = new System.Drawing.Size(178, 30);
+            this.nombre_lbl.Size = new System.Drawing.Size(142, 24);
             this.nombre_lbl.TabIndex = 27;
             this.nombre_lbl.Text = "ID de Empleado";
             this.nombre_lbl.Click += new System.EventHandler(this.nombre_lbl_Click);
@@ -196,8 +195,8 @@ namespace DojaCafe
             this.txb_telefono.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(217)))), ((int)(((byte)(175)))));
             this.txb_telefono.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txb_telefono.HoverState.Parent = this.txb_telefono;
-            this.txb_telefono.Location = new System.Drawing.Point(36, 310);
-            this.txb_telefono.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txb_telefono.Location = new System.Drawing.Point(27, 252);
+            this.txb_telefono.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txb_telefono.MaxLength = 10;
             this.txb_telefono.Name = "txb_telefono";
             this.txb_telefono.PasswordChar = '\0';
@@ -209,7 +208,7 @@ namespace DojaCafe
             this.txb_telefono.ShadowDecoration.Enabled = true;
             this.txb_telefono.ShadowDecoration.Parent = this.txb_telefono;
             this.txb_telefono.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(3);
-            this.txb_telefono.Size = new System.Drawing.Size(248, 34);
+            this.txb_telefono.Size = new System.Drawing.Size(186, 28);
             this.txb_telefono.TabIndex = 25;
             this.txb_telefono.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txb_telefono.TextChanged += new System.EventHandler(this.txb_precio_TextChanged);
@@ -234,8 +233,8 @@ namespace DojaCafe
             this.txtb_nombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(217)))), ((int)(((byte)(175)))));
             this.txtb_nombre.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtb_nombre.HoverState.Parent = this.txtb_nombre;
-            this.txtb_nombre.Location = new System.Drawing.Point(36, 218);
-            this.txtb_nombre.Margin = new System.Windows.Forms.Padding(5);
+            this.txtb_nombre.Location = new System.Drawing.Point(27, 177);
+            this.txtb_nombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtb_nombre.Name = "txtb_nombre";
             this.txtb_nombre.PasswordChar = '\0';
             this.txtb_nombre.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(137)))), ((int)(((byte)(129)))));
@@ -246,7 +245,7 @@ namespace DojaCafe
             this.txtb_nombre.ShadowDecoration.Enabled = true;
             this.txtb_nombre.ShadowDecoration.Parent = this.txtb_nombre;
             this.txtb_nombre.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(3);
-            this.txtb_nombre.Size = new System.Drawing.Size(248, 34);
+            this.txtb_nombre.Size = new System.Drawing.Size(186, 28);
             this.txtb_nombre.TabIndex = 24;
             this.txtb_nombre.TextChanged += new System.EventHandler(this.txtb_nombre_TextChanged);
             // 
@@ -266,12 +265,12 @@ namespace DojaCafe
             this.txtb_id.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
             this.txtb_id.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtb_id.FocusedState.Parent = this.txtb_id;
-            this.txtb_id.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtb_id.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic);
             this.txtb_id.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(217)))), ((int)(((byte)(175)))));
             this.txtb_id.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtb_id.HoverState.Parent = this.txtb_id;
-            this.txtb_id.Location = new System.Drawing.Point(36, 139);
-            this.txtb_id.Margin = new System.Windows.Forms.Padding(5);
+            this.txtb_id.Location = new System.Drawing.Point(27, 113);
+            this.txtb_id.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtb_id.Name = "txtb_id";
             this.txtb_id.PasswordChar = '\0';
             this.txtb_id.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(137)))), ((int)(((byte)(129)))));
@@ -282,7 +281,7 @@ namespace DojaCafe
             this.txtb_id.ShadowDecoration.Enabled = true;
             this.txtb_id.ShadowDecoration.Parent = this.txtb_id;
             this.txtb_id.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(3);
-            this.txtb_id.Size = new System.Drawing.Size(95, 33);
+            this.txtb_id.Size = new System.Drawing.Size(71, 27);
             this.txtb_id.TabIndex = 23;
             this.txtb_id.TextChanged += new System.EventHandler(this.txtb_id_TextChanged);
             // 
@@ -291,8 +290,8 @@ namespace DojaCafe
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Enabled = false;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Montserrat Alternates", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(348, 181);
-            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(261, 147);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(3, 2);
             this.guna2HtmlLabel1.TabIndex = 32;
@@ -305,7 +304,7 @@ namespace DojaCafe
             this.dtp_fecha.BackColor = System.Drawing.Color.Transparent;
             this.dtp_fecha.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.dtp_fecha.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(225)))), ((int)(((byte)(220)))));
-            this.dtp_fecha.BorderRadius = 16;
+            this.dtp_fecha.BorderRadius = 13;
             this.dtp_fecha.BorderThickness = 2;
             this.dtp_fecha.CheckedState.Parent = this.dtp_fecha;
             this.dtp_fecha.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(40)))), ((int)(((byte)(36)))));
@@ -313,8 +312,7 @@ namespace DojaCafe
             this.dtp_fecha.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.dtp_fecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtp_fecha.HoverState.Parent = this.dtp_fecha;
-            this.dtp_fecha.Location = new System.Drawing.Point(348, 218);
-            this.dtp_fecha.Margin = new System.Windows.Forms.Padding(4);
+            this.dtp_fecha.Location = new System.Drawing.Point(261, 177);
             this.dtp_fecha.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtp_fecha.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtp_fecha.Name = "dtp_fecha";
@@ -322,7 +320,7 @@ namespace DojaCafe
             this.dtp_fecha.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(55)))), ((int)(((byte)(49)))));
             this.dtp_fecha.ShadowDecoration.Parent = this.dtp_fecha;
             this.dtp_fecha.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(3);
-            this.dtp_fecha.Size = new System.Drawing.Size(159, 34);
+            this.dtp_fecha.Size = new System.Drawing.Size(119, 28);
             this.dtp_fecha.TabIndex = 33;
             this.dtp_fecha.UseTransparentBackground = true;
             this.dtp_fecha.Value = new System.DateTime(2021, 1, 30, 20, 9, 59, 22);
@@ -334,10 +332,10 @@ namespace DojaCafe
             this.guna2HtmlLabel4.Enabled = false;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Montserrat Alternates", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(252)))));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(348, 183);
-            this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(261, 149);
+            this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(228, 30);
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(181, 24);
             this.guna2HtmlLabel4.TabIndex = 34;
             this.guna2HtmlLabel4.Text = "Fecha de nacimiento";
             this.guna2HtmlLabel4.Click += new System.EventHandler(this.guna2HtmlLabel4_Click);
@@ -348,10 +346,10 @@ namespace DojaCafe
             this.guna2HtmlLabel5.Enabled = false;
             this.guna2HtmlLabel5.Font = new System.Drawing.Font("Montserrat Alternates", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(252)))));
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(348, 274);
-            this.guna2HtmlLabel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(261, 223);
+            this.guna2HtmlLabel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(75, 30);
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(59, 24);
             this.guna2HtmlLabel5.TabIndex = 35;
             this.guna2HtmlLabel5.Text = "Correo";
             // 
@@ -375,8 +373,8 @@ namespace DojaCafe
             this.txb_correo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(217)))), ((int)(((byte)(175)))));
             this.txb_correo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txb_correo.HoverState.Parent = this.txb_correo;
-            this.txb_correo.Location = new System.Drawing.Point(348, 310);
-            this.txb_correo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txb_correo.Location = new System.Drawing.Point(261, 252);
+            this.txb_correo.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txb_correo.Name = "txb_correo";
             this.txb_correo.PasswordChar = '\0';
             this.txb_correo.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(137)))), ((int)(((byte)(129)))));
@@ -387,7 +385,7 @@ namespace DojaCafe
             this.txb_correo.ShadowDecoration.Enabled = true;
             this.txb_correo.ShadowDecoration.Parent = this.txb_correo;
             this.txb_correo.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(3);
-            this.txb_correo.Size = new System.Drawing.Size(248, 34);
+            this.txb_correo.Size = new System.Drawing.Size(186, 28);
             this.txb_correo.TabIndex = 36;
             this.txb_correo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -397,10 +395,10 @@ namespace DojaCafe
             this.guna2HtmlLabel6.Enabled = false;
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("Montserrat Alternates", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(252)))));
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(36, 380);
-            this.guna2HtmlLabel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(27, 309);
+            this.guna2HtmlLabel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(77, 30);
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(61, 24);
             this.guna2HtmlLabel6.TabIndex = 38;
             this.guna2HtmlLabel6.Text = "Puesto";
             // 
@@ -421,11 +419,11 @@ namespace DojaCafe
             this.cbx_puesto.Items.AddRange(new object[] {
             ""});
             this.cbx_puesto.ItemsAppearance.Parent = this.cbx_puesto;
-            this.cbx_puesto.Location = new System.Drawing.Point(36, 415);
-            this.cbx_puesto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbx_puesto.Location = new System.Drawing.Point(27, 337);
+            this.cbx_puesto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbx_puesto.Name = "cbx_puesto";
             this.cbx_puesto.ShadowDecoration.Parent = this.cbx_puesto;
-            this.cbx_puesto.Size = new System.Drawing.Size(247, 36);
+            this.cbx_puesto.Size = new System.Drawing.Size(186, 36);
             this.cbx_puesto.TabIndex = 39;
             this.cbx_puesto.SelectedIndexChanged += new System.EventHandler(this.cbx_puesto_SelectedIndexChanged);
             // 
@@ -450,8 +448,8 @@ namespace DojaCafe
             this.txb_salario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(217)))), ((int)(((byte)(175)))));
             this.txb_salario.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txb_salario.HoverState.Parent = this.txb_salario;
-            this.txb_salario.Location = new System.Drawing.Point(348, 425);
-            this.txb_salario.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txb_salario.Location = new System.Drawing.Point(261, 345);
+            this.txb_salario.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txb_salario.Name = "txb_salario";
             this.txb_salario.PasswordChar = '\0';
             this.txb_salario.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(137)))), ((int)(((byte)(129)))));
@@ -462,7 +460,7 @@ namespace DojaCafe
             this.txb_salario.ShadowDecoration.Enabled = true;
             this.txb_salario.ShadowDecoration.Parent = this.txb_salario;
             this.txb_salario.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(3);
-            this.txb_salario.Size = new System.Drawing.Size(116, 34);
+            this.txb_salario.Size = new System.Drawing.Size(87, 28);
             this.txb_salario.TabIndex = 40;
             this.txb_salario.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txb_salario.TextChanged += new System.EventHandler(this.txb_salario_TextChanged);
@@ -473,10 +471,10 @@ namespace DojaCafe
             this.guna2HtmlLabel7.Enabled = false;
             this.guna2HtmlLabel7.Font = new System.Drawing.Font("Montserrat Alternates", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(252)))));
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(348, 385);
-            this.guna2HtmlLabel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(261, 313);
+            this.guna2HtmlLabel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
-            this.guna2HtmlLabel7.Size = new System.Drawing.Size(79, 30);
+            this.guna2HtmlLabel7.Size = new System.Drawing.Size(63, 24);
             this.guna2HtmlLabel7.TabIndex = 41;
             this.guna2HtmlLabel7.Text = "Salario";
             // 
@@ -486,7 +484,7 @@ namespace DojaCafe
             this.btn_mod.AutoRoundedCorners = true;
             this.btn_mod.BackColor = System.Drawing.Color.Transparent;
             this.btn_mod.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(44)))), ((int)(((byte)(34)))));
-            this.btn_mod.BorderRadius = 22;
+            this.btn_mod.BorderRadius = 17;
             this.btn_mod.BorderThickness = 1;
             this.btn_mod.CheckedState.Parent = this.btn_mod;
             this.btn_mod.CustomImages.Parent = this.btn_mod;
@@ -496,15 +494,14 @@ namespace DojaCafe
             this.btn_mod.HoverState.Parent = this.btn_mod;
             this.btn_mod.Image = ((System.Drawing.Image)(resources.GetObject("btn_mod.Image")));
             this.btn_mod.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_mod.Location = new System.Drawing.Point(423, 481);
-            this.btn_mod.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_mod.Location = new System.Drawing.Point(317, 391);
             this.btn_mod.Name = "btn_mod";
             this.btn_mod.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(50)))), ((int)(((byte)(39)))));
             this.btn_mod.ShadowDecoration.BorderRadius = 22;
             this.btn_mod.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(44)))), ((int)(((byte)(34)))));
             this.btn_mod.ShadowDecoration.Enabled = true;
             this.btn_mod.ShadowDecoration.Parent = this.btn_mod;
-            this.btn_mod.Size = new System.Drawing.Size(151, 46);
+            this.btn_mod.Size = new System.Drawing.Size(113, 37);
             this.btn_mod.TabIndex = 70;
             this.btn_mod.Text = "Modificar";
             this.btn_mod.TextOffset = new System.Drawing.Point(10, 0);
@@ -515,7 +512,7 @@ namespace DojaCafe
             this.btn_add.AutoRoundedCorners = true;
             this.btn_add.BackColor = System.Drawing.Color.Transparent;
             this.btn_add.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(44)))), ((int)(((byte)(34)))));
-            this.btn_add.BorderRadius = 22;
+            this.btn_add.BorderRadius = 17;
             this.btn_add.BorderThickness = 1;
             this.btn_add.CheckedState.Parent = this.btn_add;
             this.btn_add.CustomImages.Parent = this.btn_add;
@@ -525,15 +522,14 @@ namespace DojaCafe
             this.btn_add.HoverState.Parent = this.btn_add;
             this.btn_add.Image = ((System.Drawing.Image)(resources.GetObject("btn_add.Image")));
             this.btn_add.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_add.Location = new System.Drawing.Point(36, 481);
-            this.btn_add.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_add.Location = new System.Drawing.Point(27, 391);
             this.btn_add.Name = "btn_add";
             this.btn_add.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(50)))), ((int)(((byte)(39)))));
             this.btn_add.ShadowDecoration.BorderRadius = 22;
             this.btn_add.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(44)))), ((int)(((byte)(34)))));
             this.btn_add.ShadowDecoration.Enabled = true;
             this.btn_add.ShadowDecoration.Parent = this.btn_add;
-            this.btn_add.Size = new System.Drawing.Size(151, 46);
+            this.btn_add.Size = new System.Drawing.Size(113, 37);
             this.btn_add.TabIndex = 69;
             this.btn_add.Text = "Registrar";
             this.btn_add.TextOffset = new System.Drawing.Point(10, 0);
@@ -545,7 +541,7 @@ namespace DojaCafe
             this.btn_guardar.AutoRoundedCorners = true;
             this.btn_guardar.BackColor = System.Drawing.Color.Transparent;
             this.btn_guardar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(44)))), ((int)(((byte)(34)))));
-            this.btn_guardar.BorderRadius = 22;
+            this.btn_guardar.BorderRadius = 17;
             this.btn_guardar.BorderThickness = 1;
             this.btn_guardar.CheckedState.Parent = this.btn_guardar;
             this.btn_guardar.CustomImages.Parent = this.btn_guardar;
@@ -555,15 +551,14 @@ namespace DojaCafe
             this.btn_guardar.HoverState.Parent = this.btn_guardar;
             this.btn_guardar.Image = ((System.Drawing.Image)(resources.GetObject("btn_guardar.Image")));
             this.btn_guardar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_guardar.Location = new System.Drawing.Point(789, 385);
-            this.btn_guardar.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_guardar.Location = new System.Drawing.Point(592, 313);
             this.btn_guardar.Name = "btn_guardar";
             this.btn_guardar.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(50)))), ((int)(((byte)(39)))));
             this.btn_guardar.ShadowDecoration.BorderRadius = 22;
             this.btn_guardar.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(44)))), ((int)(((byte)(34)))));
             this.btn_guardar.ShadowDecoration.Enabled = true;
             this.btn_guardar.ShadowDecoration.Parent = this.btn_guardar;
-            this.btn_guardar.Size = new System.Drawing.Size(151, 46);
+            this.btn_guardar.Size = new System.Drawing.Size(113, 37);
             this.btn_guardar.TabIndex = 68;
             this.btn_guardar.Text = "Guardar";
             this.btn_guardar.TextOffset = new System.Drawing.Point(10, 0);
@@ -574,7 +569,7 @@ namespace DojaCafe
             this.btn_delete.AutoRoundedCorners = true;
             this.btn_delete.BackColor = System.Drawing.Color.Transparent;
             this.btn_delete.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(44)))), ((int)(((byte)(34)))));
-            this.btn_delete.BorderRadius = 22;
+            this.btn_delete.BorderRadius = 17;
             this.btn_delete.BorderThickness = 1;
             this.btn_delete.CheckedState.Parent = this.btn_delete;
             this.btn_delete.CustomImages.Parent = this.btn_delete;
@@ -584,15 +579,14 @@ namespace DojaCafe
             this.btn_delete.HoverState.Parent = this.btn_delete;
             this.btn_delete.Image = ((System.Drawing.Image)(resources.GetObject("btn_delete.Image")));
             this.btn_delete.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_delete.Location = new System.Drawing.Point(224, 481);
-            this.btn_delete.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_delete.Location = new System.Drawing.Point(168, 391);
             this.btn_delete.Name = "btn_delete";
             this.btn_delete.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(50)))), ((int)(((byte)(39)))));
             this.btn_delete.ShadowDecoration.BorderRadius = 22;
             this.btn_delete.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(44)))), ((int)(((byte)(34)))));
             this.btn_delete.ShadowDecoration.Enabled = true;
             this.btn_delete.ShadowDecoration.Parent = this.btn_delete;
-            this.btn_delete.Size = new System.Drawing.Size(151, 46);
+            this.btn_delete.Size = new System.Drawing.Size(113, 37);
             this.btn_delete.TabIndex = 71;
             this.btn_delete.Text = "Eliminar";
             this.btn_delete.TextOffset = new System.Drawing.Point(10, 0);
@@ -604,7 +598,7 @@ namespace DojaCafe
             this.btn_bitacora.AutoRoundedCorners = true;
             this.btn_bitacora.BackColor = System.Drawing.Color.Transparent;
             this.btn_bitacora.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(151)))), ((int)(((byte)(145)))));
-            this.btn_bitacora.BorderRadius = 22;
+            this.btn_bitacora.BorderRadius = 17;
             this.btn_bitacora.BorderThickness = 1;
             this.btn_bitacora.CheckedState.Parent = this.btn_bitacora;
             this.btn_bitacora.CustomImages.Parent = this.btn_bitacora;
@@ -614,15 +608,14 @@ namespace DojaCafe
             this.btn_bitacora.HoverState.Parent = this.btn_bitacora;
             this.btn_bitacora.Image = ((System.Drawing.Image)(resources.GetObject("btn_bitacora.Image")));
             this.btn_bitacora.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_bitacora.Location = new System.Drawing.Point(789, 457);
-            this.btn_bitacora.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_bitacora.Location = new System.Drawing.Point(592, 371);
             this.btn_bitacora.Name = "btn_bitacora";
             this.btn_bitacora.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(50)))), ((int)(((byte)(39)))));
             this.btn_bitacora.ShadowDecoration.BorderRadius = 22;
             this.btn_bitacora.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(44)))), ((int)(((byte)(34)))));
             this.btn_bitacora.ShadowDecoration.Enabled = true;
             this.btn_bitacora.ShadowDecoration.Parent = this.btn_bitacora;
-            this.btn_bitacora.Size = new System.Drawing.Size(151, 46);
+            this.btn_bitacora.Size = new System.Drawing.Size(113, 37);
             this.btn_bitacora.TabIndex = 72;
             this.btn_bitacora.Text = "Visualizar";
             this.btn_bitacora.TextOffset = new System.Drawing.Point(10, 0);
@@ -630,10 +623,10 @@ namespace DojaCafe
             // 
             // Empleados
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(61)))), ((int)(((byte)(55)))));
-            this.ClientSize = new System.Drawing.Size(968, 542);
+            this.ClientSize = new System.Drawing.Size(726, 440);
             this.Controls.Add(this.btn_bitacora);
             this.Controls.Add(this.btn_delete);
             this.Controls.Add(this.btn_mod);
@@ -658,7 +651,6 @@ namespace DojaCafe
             this.Controls.Add(this.txtb_id);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Empleados";
             this.Text = "Empleados";
             this.Load += new System.EventHandler(this.Empleados_Load);
