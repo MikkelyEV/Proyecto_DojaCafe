@@ -15,7 +15,7 @@ namespace DojaCafe
     public partial class Ventas : Form
     {
 
-        string cadenaConex=(@"Data Source = QUESADILLA; Initial Catalog = DOJACAFE; Integrated Security = True;MultipleActiveResultSets=True");
+        string cadenaConex=(@"Data Source = MSI; Initial Catalog = DOJACAFE; Integrated Security = True;MultipleActiveResultSets=True");
         public Ventas()
         {
             InitializeComponent();

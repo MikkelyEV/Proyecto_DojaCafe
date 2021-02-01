@@ -61,6 +61,10 @@ namespace DojaCafe
 
         private void Empleados_Load(object sender, EventArgs e)
         {
+            ComboboxNombresPuestos();
+        }
+        private void ComboboxNombresPuestos()
+        {
             cbx_puesto.SelectedIndex = -1;
             SqlConnection conn = new SqlConnection(@"Data Source=MSI;Initial Catalog=DOJACAFE;Integrated Security=True");
             conn.Open();
@@ -71,7 +75,7 @@ namespace DojaCafe
             dt.Columns.Add("puesto", typeof(string));
             dt.Load(reader);
 
-           
+
             cbx_puesto.DisplayMember = "puesto";
             cbx_puesto.DataSource = dt;
             cbx_puesto.SelectedItem = null;
@@ -79,7 +83,26 @@ namespace DojaCafe
             conn.Close();
             txb_salario.Text = " ";
         }
+        private void ComboboxIDEmpleados()
+        {
+            cbx_id.SelectedIndex = -1;
+            SqlConnection conn = new SqlConnection(@"Data Source=MSI;Initial Catalog=DOJACAFE;Integrated Security=True");
+            conn.Open();
+            SqlCommand sc = new SqlCommand("select empleado_id from EMPLEADO", conn);
+            SqlDataReader reader;
+            reader = sc.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Columns.Add("empleado_id", typeof(string));
+            dt.Load(reader);
 
+
+            cbx_id.DisplayMember = "empleado_id";
+            cbx_id.DataSource = dt;
+            cbx_id.SelectedItem = null;
+
+            conn.Close();
+            
+        }
         private void guna2HtmlLabel4_Click(object sender, EventArgs e)
         {
 
@@ -232,23 +255,19 @@ namespace DojaCafe
 
         private void btn_mod_Click(object sender, EventArgs e)
         {
-
-            if (txtb_id.Text == "")
-            {
-                MessageBox.Show("Escriba el ID del registro que desea eliminar");
-            }
-            else
-            {
-                try
-                {
-                    
-                }
-                catch (Exception)
-                {
-                    MessageBox.Show("Ha habido un error, intentelo de nuevo.");
-                    throw;
-                }
-            }
+            cbx_id.Visible = true;
+            cbx_id.Enabled = true;
+            btn_cancelar.Visible = true;
+            btn_cancelar.Enabled = true;
+            btn_guardar.Visible = true;
+            btn_guardar.Enabled = true;
+            btn_add.Visible = false;
+            btn_add.Enabled = false;
+            btn_delete.Visible = false;
+            btn_delete.Enabled = false;
+            ComboboxIDEmpleados();
+            
+            
 
         }
         private void cargarinfo(object sender, EventArgs e)
@@ -256,8 +275,33 @@ namespace DojaCafe
 
         }
 
-     
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            cbx_id.Visible = false;
+            cbx_id.Enabled = false;
+            btn_cancelar.Visible = false;
+            btn_cancelar.Enabled = false;
+            btn_guardar.Visible = false;
+            btn_guardar.Enabled = false;
+            btn_add.Visible = true;
+            btn_add.Enabled = true;
+            btn_delete.Visible = true;
+            btn_delete.Enabled = true;
+            txtb_id.Clear();
+            txtb_nombre.Clear();
+            txb_telefono.Clear();
+            cbx_puesto.SelectedIndex = -1;
+            dtp_fecha.Value = DateTime.Now;
+            txb_correo.Clear();
+            txb_direccion.Clear();
+            txb_salario.Clear();
+            ComboboxNombresPuestos();
+        }
 
+        private void cbx_id_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
     }
 

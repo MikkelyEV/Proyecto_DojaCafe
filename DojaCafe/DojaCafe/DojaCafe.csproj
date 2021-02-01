@@ -81,7 +81,7 @@
     <Compile Include="Empleados.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Empleados.Designer.cs">
+    <Compile Include="Empleados.designer.cs">
       <DependentUpon>Empleados.cs</DependentUpon>
     </Compile>
     <Compile Include="Form2.cs">
