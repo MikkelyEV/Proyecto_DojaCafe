@@ -39,7 +39,6 @@ namespace DojaCafe
             conectar.Dispose();
             comando.Dispose();
             da.Dispose();
-
             dgv_empleado.AutoGenerateColumns = true;
             dgv_empleado.DataSource = dt;
             
