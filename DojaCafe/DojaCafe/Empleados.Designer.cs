@@ -51,11 +51,11 @@ namespace DojaCafe
             this.cbx_puesto = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txb_salario = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btn_mod = new Guna.UI2.WinForms.Guna2Button();
             this.btn_add = new Guna.UI2.WinForms.Guna2Button();
             this.btn_guardar = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_delete = new Guna.UI2.WinForms.Guna2Button();
             this.btn_bitacora = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_delete = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_mod = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -117,7 +117,7 @@ namespace DojaCafe
             this.txb_direccion.ShadowDecoration.Parent = this.txb_direccion;
             this.txb_direccion.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(3);
             this.txb_direccion.Size = new System.Drawing.Size(248, 34);
-            this.txb_direccion.TabIndex = 26;
+            this.txb_direccion.TabIndex = 7;
             this.txb_direccion.TextChanged += new System.EventHandler(this.txb_desc_TextChanged);
             // 
             // guna2HtmlLabel3
@@ -210,7 +210,7 @@ namespace DojaCafe
             this.txb_telefono.ShadowDecoration.Parent = this.txb_telefono;
             this.txb_telefono.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(3);
             this.txb_telefono.Size = new System.Drawing.Size(248, 34);
-            this.txb_telefono.TabIndex = 25;
+            this.txb_telefono.TabIndex = 2;
             this.txb_telefono.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txb_telefono.TextChanged += new System.EventHandler(this.txb_precio_TextChanged);
             // 
@@ -247,7 +247,7 @@ namespace DojaCafe
             this.txtb_nombre.ShadowDecoration.Parent = this.txtb_nombre;
             this.txtb_nombre.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(3);
             this.txtb_nombre.Size = new System.Drawing.Size(248, 34);
-            this.txtb_nombre.TabIndex = 24;
+            this.txtb_nombre.TabIndex = 1;
             this.txtb_nombre.TextChanged += new System.EventHandler(this.txtb_nombre_TextChanged);
             // 
             // txtb_id
@@ -283,7 +283,7 @@ namespace DojaCafe
             this.txtb_id.ShadowDecoration.Parent = this.txtb_id;
             this.txtb_id.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(3);
             this.txtb_id.Size = new System.Drawing.Size(95, 33);
-            this.txtb_id.TabIndex = 23;
+            this.txtb_id.TabIndex = 0;
             this.txtb_id.TextChanged += new System.EventHandler(this.txtb_id_TextChanged);
             // 
             // guna2HtmlLabel1
@@ -323,7 +323,7 @@ namespace DojaCafe
             this.dtp_fecha.ShadowDecoration.Parent = this.dtp_fecha;
             this.dtp_fecha.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(3);
             this.dtp_fecha.Size = new System.Drawing.Size(159, 34);
-            this.dtp_fecha.TabIndex = 33;
+            this.dtp_fecha.TabIndex = 4;
             this.dtp_fecha.UseTransparentBackground = true;
             this.dtp_fecha.Value = new System.DateTime(2021, 1, 30, 20, 9, 59, 22);
             this.dtp_fecha.ValueChanged += new System.EventHandler(this.dtp_fecha_ValueChanged);
@@ -388,7 +388,7 @@ namespace DojaCafe
             this.txb_correo.ShadowDecoration.Parent = this.txb_correo;
             this.txb_correo.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(3);
             this.txb_correo.Size = new System.Drawing.Size(248, 34);
-            this.txb_correo.TabIndex = 36;
+            this.txb_correo.TabIndex = 5;
             this.txb_correo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // guna2HtmlLabel6
@@ -397,7 +397,7 @@ namespace DojaCafe
             this.guna2HtmlLabel6.Enabled = false;
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("Montserrat Alternates", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(252)))));
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(36, 380);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(36, 366);
             this.guna2HtmlLabel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
             this.guna2HtmlLabel6.Size = new System.Drawing.Size(77, 30);
@@ -421,12 +421,12 @@ namespace DojaCafe
             this.cbx_puesto.Items.AddRange(new object[] {
             ""});
             this.cbx_puesto.ItemsAppearance.Parent = this.cbx_puesto;
-            this.cbx_puesto.Location = new System.Drawing.Point(36, 415);
+            this.cbx_puesto.Location = new System.Drawing.Point(36, 400);
             this.cbx_puesto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbx_puesto.Name = "cbx_puesto";
             this.cbx_puesto.ShadowDecoration.Parent = this.cbx_puesto;
             this.cbx_puesto.Size = new System.Drawing.Size(247, 36);
-            this.cbx_puesto.TabIndex = 39;
+            this.cbx_puesto.TabIndex = 3;
             this.cbx_puesto.SelectedIndexChanged += new System.EventHandler(this.cbx_puesto_SelectedIndexChanged);
             // 
             // txb_salario
@@ -450,7 +450,7 @@ namespace DojaCafe
             this.txb_salario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(217)))), ((int)(((byte)(175)))));
             this.txb_salario.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txb_salario.HoverState.Parent = this.txb_salario;
-            this.txb_salario.Location = new System.Drawing.Point(348, 425);
+            this.txb_salario.Location = new System.Drawing.Point(348, 397);
             this.txb_salario.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txb_salario.Name = "txb_salario";
             this.txb_salario.PasswordChar = '\0';
@@ -463,7 +463,7 @@ namespace DojaCafe
             this.txb_salario.ShadowDecoration.Parent = this.txb_salario;
             this.txb_salario.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(3);
             this.txb_salario.Size = new System.Drawing.Size(116, 34);
-            this.txb_salario.TabIndex = 40;
+            this.txb_salario.TabIndex = 6;
             this.txb_salario.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txb_salario.TextChanged += new System.EventHandler(this.txb_salario_TextChanged);
             // 
@@ -473,41 +473,12 @@ namespace DojaCafe
             this.guna2HtmlLabel7.Enabled = false;
             this.guna2HtmlLabel7.Font = new System.Drawing.Font("Montserrat Alternates", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(252)))));
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(348, 385);
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(348, 366);
             this.guna2HtmlLabel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
             this.guna2HtmlLabel7.Size = new System.Drawing.Size(79, 30);
             this.guna2HtmlLabel7.TabIndex = 41;
             this.guna2HtmlLabel7.Text = "Salario";
-            // 
-            // btn_mod
-            // 
-            this.btn_mod.Animated = true;
-            this.btn_mod.AutoRoundedCorners = true;
-            this.btn_mod.BackColor = System.Drawing.Color.Transparent;
-            this.btn_mod.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(44)))), ((int)(((byte)(34)))));
-            this.btn_mod.BorderRadius = 22;
-            this.btn_mod.BorderThickness = 1;
-            this.btn_mod.CheckedState.Parent = this.btn_mod;
-            this.btn_mod.CustomImages.Parent = this.btn_mod;
-            this.btn_mod.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(106)))), ((int)(((byte)(88)))));
-            this.btn_mod.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_mod.ForeColor = System.Drawing.Color.White;
-            this.btn_mod.HoverState.Parent = this.btn_mod;
-            this.btn_mod.Image = ((System.Drawing.Image)(resources.GetObject("btn_mod.Image")));
-            this.btn_mod.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_mod.Location = new System.Drawing.Point(423, 481);
-            this.btn_mod.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_mod.Name = "btn_mod";
-            this.btn_mod.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(50)))), ((int)(((byte)(39)))));
-            this.btn_mod.ShadowDecoration.BorderRadius = 22;
-            this.btn_mod.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(44)))), ((int)(((byte)(34)))));
-            this.btn_mod.ShadowDecoration.Enabled = true;
-            this.btn_mod.ShadowDecoration.Parent = this.btn_mod;
-            this.btn_mod.Size = new System.Drawing.Size(151, 46);
-            this.btn_mod.TabIndex = 70;
-            this.btn_mod.Text = "Modificar";
-            this.btn_mod.TextOffset = new System.Drawing.Point(10, 0);
             // 
             // btn_add
             // 
@@ -525,7 +496,7 @@ namespace DojaCafe
             this.btn_add.HoverState.Parent = this.btn_add;
             this.btn_add.Image = ((System.Drawing.Image)(resources.GetObject("btn_add.Image")));
             this.btn_add.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_add.Location = new System.Drawing.Point(36, 481);
+            this.btn_add.Location = new System.Drawing.Point(52, 466);
             this.btn_add.Margin = new System.Windows.Forms.Padding(4);
             this.btn_add.Name = "btn_add";
             this.btn_add.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(50)))), ((int)(((byte)(39)))));
@@ -534,7 +505,7 @@ namespace DojaCafe
             this.btn_add.ShadowDecoration.Enabled = true;
             this.btn_add.ShadowDecoration.Parent = this.btn_add;
             this.btn_add.Size = new System.Drawing.Size(151, 46);
-            this.btn_add.TabIndex = 69;
+            this.btn_add.TabIndex = 8;
             this.btn_add.Text = "Registrar";
             this.btn_add.TextOffset = new System.Drawing.Point(10, 0);
             this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
@@ -555,7 +526,7 @@ namespace DojaCafe
             this.btn_guardar.HoverState.Parent = this.btn_guardar;
             this.btn_guardar.Image = ((System.Drawing.Image)(resources.GetObject("btn_guardar.Image")));
             this.btn_guardar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_guardar.Location = new System.Drawing.Point(789, 385);
+            this.btn_guardar.Location = new System.Drawing.Point(770, 467);
             this.btn_guardar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_guardar.Name = "btn_guardar";
             this.btn_guardar.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(50)))), ((int)(((byte)(39)))));
@@ -564,39 +535,9 @@ namespace DojaCafe
             this.btn_guardar.ShadowDecoration.Enabled = true;
             this.btn_guardar.ShadowDecoration.Parent = this.btn_guardar;
             this.btn_guardar.Size = new System.Drawing.Size(151, 46);
-            this.btn_guardar.TabIndex = 68;
+            this.btn_guardar.TabIndex = 12;
             this.btn_guardar.Text = "Guardar";
             this.btn_guardar.TextOffset = new System.Drawing.Point(10, 0);
-            // 
-            // btn_delete
-            // 
-            this.btn_delete.Animated = true;
-            this.btn_delete.AutoRoundedCorners = true;
-            this.btn_delete.BackColor = System.Drawing.Color.Transparent;
-            this.btn_delete.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(44)))), ((int)(((byte)(34)))));
-            this.btn_delete.BorderRadius = 22;
-            this.btn_delete.BorderThickness = 1;
-            this.btn_delete.CheckedState.Parent = this.btn_delete;
-            this.btn_delete.CustomImages.Parent = this.btn_delete;
-            this.btn_delete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(106)))), ((int)(((byte)(88)))));
-            this.btn_delete.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_delete.ForeColor = System.Drawing.Color.White;
-            this.btn_delete.HoverState.Parent = this.btn_delete;
-            this.btn_delete.Image = ((System.Drawing.Image)(resources.GetObject("btn_delete.Image")));
-            this.btn_delete.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_delete.Location = new System.Drawing.Point(224, 481);
-            this.btn_delete.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_delete.Name = "btn_delete";
-            this.btn_delete.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(50)))), ((int)(((byte)(39)))));
-            this.btn_delete.ShadowDecoration.BorderRadius = 22;
-            this.btn_delete.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(44)))), ((int)(((byte)(34)))));
-            this.btn_delete.ShadowDecoration.Enabled = true;
-            this.btn_delete.ShadowDecoration.Parent = this.btn_delete;
-            this.btn_delete.Size = new System.Drawing.Size(151, 46);
-            this.btn_delete.TabIndex = 71;
-            this.btn_delete.Text = "Eliminar";
-            this.btn_delete.TextOffset = new System.Drawing.Point(10, 0);
-            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
             // 
             // btn_bitacora
             // 
@@ -609,12 +550,12 @@ namespace DojaCafe
             this.btn_bitacora.CheckedState.Parent = this.btn_bitacora;
             this.btn_bitacora.CustomImages.Parent = this.btn_bitacora;
             this.btn_bitacora.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(106)))), ((int)(((byte)(88)))));
-            this.btn_bitacora.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_bitacora.Font = new System.Drawing.Font("Montserrat", 9.749999F);
             this.btn_bitacora.ForeColor = System.Drawing.Color.White;
             this.btn_bitacora.HoverState.Parent = this.btn_bitacora;
             this.btn_bitacora.Image = ((System.Drawing.Image)(resources.GetObject("btn_bitacora.Image")));
             this.btn_bitacora.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_bitacora.Location = new System.Drawing.Point(789, 457);
+            this.btn_bitacora.Location = new System.Drawing.Point(770, 413);
             this.btn_bitacora.Margin = new System.Windows.Forms.Padding(4);
             this.btn_bitacora.Name = "btn_bitacora";
             this.btn_bitacora.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(50)))), ((int)(((byte)(39)))));
@@ -623,10 +564,70 @@ namespace DojaCafe
             this.btn_bitacora.ShadowDecoration.Enabled = true;
             this.btn_bitacora.ShadowDecoration.Parent = this.btn_bitacora;
             this.btn_bitacora.Size = new System.Drawing.Size(151, 46);
-            this.btn_bitacora.TabIndex = 72;
+            this.btn_bitacora.TabIndex = 11;
             this.btn_bitacora.Text = "Visualizar";
             this.btn_bitacora.TextOffset = new System.Drawing.Point(10, 0);
             this.btn_bitacora.Click += new System.EventHandler(this.btn_bitacora_Click);
+            // 
+            // btn_delete
+            // 
+            this.btn_delete.Animated = true;
+            this.btn_delete.AutoRoundedCorners = true;
+            this.btn_delete.BackColor = System.Drawing.Color.Transparent;
+            this.btn_delete.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(151)))), ((int)(((byte)(145)))));
+            this.btn_delete.BorderRadius = 22;
+            this.btn_delete.BorderThickness = 1;
+            this.btn_delete.CheckedState.Parent = this.btn_delete;
+            this.btn_delete.CustomImages.Parent = this.btn_delete;
+            this.btn_delete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(106)))), ((int)(((byte)(88)))));
+            this.btn_delete.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_delete.ForeColor = System.Drawing.Color.White;
+            this.btn_delete.HoverState.Parent = this.btn_delete;
+            this.btn_delete.Image = ((System.Drawing.Image)(resources.GetObject("btn_delete.Image")));
+            this.btn_delete.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_delete.Location = new System.Drawing.Point(235, 467);
+            this.btn_delete.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_delete.Name = "btn_delete";
+            this.btn_delete.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(50)))), ((int)(((byte)(39)))));
+            this.btn_delete.ShadowDecoration.BorderRadius = 22;
+            this.btn_delete.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(44)))), ((int)(((byte)(34)))));
+            this.btn_delete.ShadowDecoration.Enabled = true;
+            this.btn_delete.ShadowDecoration.Parent = this.btn_delete;
+            this.btn_delete.Size = new System.Drawing.Size(151, 46);
+            this.btn_delete.TabIndex = 9;
+            this.btn_delete.Text = "Eliminar";
+            this.btn_delete.TextOffset = new System.Drawing.Point(10, 0);
+            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click_1);
+            // 
+            // btn_mod
+            // 
+            this.btn_mod.Animated = true;
+            this.btn_mod.AutoRoundedCorners = true;
+            this.btn_mod.BackColor = System.Drawing.Color.Transparent;
+            this.btn_mod.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(151)))), ((int)(((byte)(145)))));
+            this.btn_mod.BorderRadius = 22;
+            this.btn_mod.BorderThickness = 1;
+            this.btn_mod.CheckedState.Parent = this.btn_mod;
+            this.btn_mod.CustomImages.Parent = this.btn_mod;
+            this.btn_mod.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(106)))), ((int)(((byte)(88)))));
+            this.btn_mod.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_mod.ForeColor = System.Drawing.Color.White;
+            this.btn_mod.HoverState.Parent = this.btn_mod;
+            this.btn_mod.Image = ((System.Drawing.Image)(resources.GetObject("btn_mod.Image")));
+            this.btn_mod.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_mod.Location = new System.Drawing.Point(415, 467);
+            this.btn_mod.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_mod.Name = "btn_mod";
+            this.btn_mod.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(50)))), ((int)(((byte)(39)))));
+            this.btn_mod.ShadowDecoration.BorderRadius = 22;
+            this.btn_mod.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(44)))), ((int)(((byte)(34)))));
+            this.btn_mod.ShadowDecoration.Enabled = true;
+            this.btn_mod.ShadowDecoration.Parent = this.btn_mod;
+            this.btn_mod.Size = new System.Drawing.Size(151, 46);
+            this.btn_mod.TabIndex = 10;
+            this.btn_mod.Text = "Modificar";
+            this.btn_mod.TextOffset = new System.Drawing.Point(10, 0);
+            this.btn_mod.Click += new System.EventHandler(this.btn_mod_Click);
             // 
             // Empleados
             // 
@@ -634,9 +635,9 @@ namespace DojaCafe
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(61)))), ((int)(((byte)(55)))));
             this.ClientSize = new System.Drawing.Size(968, 542);
-            this.Controls.Add(this.btn_bitacora);
-            this.Controls.Add(this.btn_delete);
             this.Controls.Add(this.btn_mod);
+            this.Controls.Add(this.btn_delete);
+            this.Controls.Add(this.btn_bitacora);
             this.Controls.Add(this.btn_add);
             this.Controls.Add(this.btn_guardar);
             this.Controls.Add(this.guna2HtmlLabel7);
@@ -691,10 +692,10 @@ namespace DojaCafe
         private Guna.UI2.WinForms.Guna2ComboBox cbx_puesto;
         private Guna.UI2.WinForms.Guna2TextBox txb_salario;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
-        private Guna.UI2.WinForms.Guna2Button btn_mod;
         private Guna.UI2.WinForms.Guna2Button btn_add;
         private Guna.UI2.WinForms.Guna2Button btn_guardar;
-        private Guna.UI2.WinForms.Guna2Button btn_delete;
         private Guna.UI2.WinForms.Guna2Button btn_bitacora;
+        private Guna.UI2.WinForms.Guna2Button btn_delete;
+        private Guna.UI2.WinForms.Guna2Button btn_mod;
     }
 }

@@ -21,5 +21,10 @@ namespace DojaCafe
         {
 
         }
+
+        private void cantidad_lbl_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
