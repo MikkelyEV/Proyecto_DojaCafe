@@ -78,11 +78,13 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DOJACAFEDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Empleados.cs">
+    <Compile Include="..\..\..\..\..\..\Documents\Backup antes del mikelypocalipsis de turno\Empleados.cs">
       <SubType>Form</SubType>
+      <Link>Empleados.cs</Link>
     </Compile>
-    <Compile Include="Empleados.designer.cs">
+    <Compile Include="..\..\..\..\..\..\Documents\Backup antes del mikelypocalipsis de turno\Empleados.designer.cs">
       <DependentUpon>Empleados.cs</DependentUpon>
+      <Link>Empleados.designer.cs</Link>
     </Compile>
     <Compile Include="Form2.cs">
       <SubType>Form</SubType>
@@ -135,8 +137,9 @@
     <EmbeddedResource Include="Cliente.resx">
       <DependentUpon>Cliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Empleados.resx">
+    <EmbeddedResource Include="..\..\..\..\..\..\Documents\Backup antes del mikelypocalipsis de turno\Empleados.resx">
       <DependentUpon>Empleados.cs</DependentUpon>
+      <Link>Empleados.resx</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>

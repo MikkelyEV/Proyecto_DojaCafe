@@ -21,8 +21,8 @@ namespace DojaCafe
         private void Bitacora_ventas_Load(object sender, EventArgs e)
         {
             // TODO: esta línea de código carga datos en la tabla 'dOJACAFEDataSet.VENTA' Puede moverla o quitarla según sea necesario.
-            this.vENTATableAdapter.Fill(this.dOJACAFEDataSet.VENTA);
-            string cadenaConex = @"Data Source = QUESADILLA; Initial Catalog = DOJACAFE; Integrated Security = True;MultipleActiveResultSets=True";
+           
+            string cadenaConex = @"Data Source = MSI; Initial Catalog = DOJACAFE; Integrated Security = True;MultipleActiveResultSets=True";
             string cadenaSQL = "SELECT * FROM VENTA ORDER BY folio";
             SqlDataAdapter da = new SqlDataAdapter();
             DataTable dt = new DataTable();

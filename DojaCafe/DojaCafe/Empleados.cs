@@ -132,50 +132,56 @@ namespace DojaCafe
             String salario = txb_salario.Text;
             int edad = DateTime.Now.Year-Fecha.Year;
             String Puesto = puestonombre(Puestocbx);
-            if (edad < 18)
+            if (IDempleado == "")
             {
-                MessageBox.Show("El empleado a registrar debe ser mayor de edad");
+                MessageBox.Show("ID no valido");
             }
             else
             {
-                try
+                if (edad < 18)
                 {
-
-                    SqlConnection conn = new SqlConnection(@"Data Source=MSI;Initial Catalog=DOJACAFE;Integrated Security=True");
-                    conn.Open();
-                    SqlCommand cmd = new SqlCommand();
-                    SqlCommand command = new SqlCommand("EXECUTE dbo.InsertarEmpleado'" + IDempleado + "','" + nombreempleado + "','" + Telefono + "','" + Direccion + "','" + Correo + "','" + Puesto + "','" + Fecha1 + "'," + edad, conn);
-                    command.ExecuteNonQuery();
-                    conn.Close();
-                    conn.Dispose();
-                    command.Dispose();
-                    MessageBox.Show("Registro realizado con exito");
-                    txtb_id.Clear();
-                    txtb_nombre.Clear();
-                    txb_telefono.Clear();
-                    cbx_puesto.SelectedIndex = -1;
-                    dtp_fecha.Value = DateTime.Now;
-                    txb_correo.Clear();
-                    txb_direccion.Clear();
-                    txb_salario.Clear();
-
+                    MessageBox.Show("El empleado a registrar debe ser mayor de edad");
                 }
-                catch (Exception ex)
+                else
                 {
-                    MessageBox.Show("Insercion fallida");
-                    txtb_id.Clear();
-                    txtb_nombre.Clear();
-                    txb_telefono.Clear();
-                    cbx_puesto.SelectedIndex = -1;
-                    dtp_fecha.Value = DateTime.Now;
-                    txb_correo.Clear();
-                    txb_direccion.Clear();
-                    txb_salario.Clear();
+                    try
+                    {
+
+                        SqlConnection conn = new SqlConnection(@"Data Source=MSI;Initial Catalog=DOJACAFE;Integrated Security=True");
+                        conn.Open();
+                        SqlCommand cmd = new SqlCommand();
+                        SqlCommand command = new SqlCommand("EXECUTE dbo.InsertarEmpleado'" + IDempleado + "','" + nombreempleado + "','" + Telefono + "','" + Direccion + "','" + Correo + "','" + Puesto + "','" + Fecha1 + "'," + edad, conn);
+                        command.ExecuteNonQuery();
+                        conn.Close();
+                        conn.Dispose();
+                        command.Dispose();
+                        MessageBox.Show("Registro realizado con exito");
+                        txtb_id.Clear();
+                        txtb_nombre.Clear();
+                        txb_telefono.Clear();
+                        cbx_puesto.SelectedIndex = -1;
+                        dtp_fecha.Value = DateTime.Now;
+                        txb_correo.Clear();
+                        txb_direccion.Clear();
+                        txb_salario.Clear();
+
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Insercion fallida");
+                        txtb_id.Clear();
+                        txtb_nombre.Clear();
+                        txb_telefono.Clear();
+                        cbx_puesto.SelectedIndex = -1;
+                        dtp_fecha.Value = DateTime.Now;
+                        txb_correo.Clear();
+                        txb_direccion.Clear();
+                        txb_salario.Clear();
+                    }
+
                 }
 
             }
-
-           
         }
 
         private void cbx_puesto_SelectedIndexChanged(object sender, EventArgs e)
@@ -300,7 +306,8 @@ namespace DojaCafe
 
         private void cbx_id_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            string idelegido = cbx_id.Text;
+            string cadenaSQL = "SELECT nombre,telefono,direccion,correo,puesto_id,fecha_nac,edad FROM EMLEADO where  empleado_id=" + cbx_id.Text;
         }
     }
     }
