@@ -56,6 +56,8 @@ namespace DojaCafe
             this.btn_bitacora = new Guna.UI2.WinForms.Guna2Button();
             this.btn_delete = new Guna.UI2.WinForms.Guna2Button();
             this.btn_mod = new Guna.UI2.WinForms.Guna2Button();
+            this.cbx_id = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.btn_cancelar = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -617,6 +619,7 @@ namespace DojaCafe
             this.btn_guardar.BorderThickness = 1;
             this.btn_guardar.CheckedState.Parent = this.btn_guardar;
             this.btn_guardar.CustomImages.Parent = this.btn_guardar;
+            this.btn_guardar.Enabled = false;
             this.btn_guardar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(106)))), ((int)(((byte)(88)))));
             this.btn_guardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_guardar.ForeColor = System.Drawing.Color.White;
@@ -624,9 +627,13 @@ namespace DojaCafe
             this.btn_guardar.Image = ((System.Drawing.Image)(resources.GetObject("btn_guardar.Image")));
             this.btn_guardar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
 <<<<<<< HEAD
+            this.btn_guardar.Location = new System.Drawing.Point(770, 466);
+=======
+<<<<<<< HEAD
             this.btn_guardar.Location = new System.Drawing.Point(592, 313);
 =======
             this.btn_guardar.Location = new System.Drawing.Point(770, 467);
+>>>>>>> dad7967a04f3bae900b7a5a7236c35166afb9a3f
             this.btn_guardar.Margin = new System.Windows.Forms.Padding(4);
 >>>>>>> 0658bd3d1bbc7d5c369412c4ad357f0a1fd67bc4
             this.btn_guardar.Name = "btn_guardar";
@@ -636,14 +643,19 @@ namespace DojaCafe
             this.btn_guardar.ShadowDecoration.Enabled = true;
             this.btn_guardar.ShadowDecoration.Parent = this.btn_guardar;
 <<<<<<< HEAD
+            this.btn_guardar.Size = new System.Drawing.Size(151, 47);
+=======
+<<<<<<< HEAD
             this.btn_guardar.Size = new System.Drawing.Size(113, 37);
             this.btn_guardar.TabIndex = 68;
 =======
             this.btn_guardar.Size = new System.Drawing.Size(151, 46);
+>>>>>>> dad7967a04f3bae900b7a5a7236c35166afb9a3f
             this.btn_guardar.TabIndex = 12;
 >>>>>>> 0658bd3d1bbc7d5c369412c4ad357f0a1fd67bc4
             this.btn_guardar.Text = "Guardar";
             this.btn_guardar.TextOffset = new System.Drawing.Point(10, 0);
+            this.btn_guardar.Visible = false;
             // 
             // btn_bitacora
             // 
@@ -778,6 +790,65 @@ namespace DojaCafe
             this.btn_mod.Click += new System.EventHandler(this.btn_mod_Click);
 >>>>>>> 0658bd3d1bbc7d5c369412c4ad357f0a1fd67bc4
             // 
+            // cbx_id
+            // 
+            this.cbx_id.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(225)))), ((int)(((byte)(220)))));
+            this.cbx_id.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(225)))), ((int)(((byte)(220)))));
+            this.cbx_id.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbx_id.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbx_id.Enabled = false;
+            this.cbx_id.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
+            this.cbx_id.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbx_id.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbx_id.FocusedState.Parent = this.cbx_id;
+            this.cbx_id.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic);
+            this.cbx_id.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(217)))), ((int)(((byte)(175)))));
+            this.cbx_id.HoverState.Parent = this.cbx_id;
+            this.cbx_id.ItemHeight = 30;
+            this.cbx_id.Items.AddRange(new object[] {
+            ""});
+            this.cbx_id.ItemsAppearance.Parent = this.cbx_id;
+            this.cbx_id.Location = new System.Drawing.Point(33, 136);
+            this.cbx_id.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbx_id.Name = "cbx_id";
+            this.cbx_id.ShadowDecoration.Parent = this.cbx_id;
+            this.cbx_id.Size = new System.Drawing.Size(247, 36);
+            this.cbx_id.TabIndex = 42;
+            this.cbx_id.Visible = false;
+            this.cbx_id.SelectedIndexChanged += new System.EventHandler(this.cbx_id_SelectedIndexChanged);
+            // 
+            // btn_cancelar
+            // 
+            this.btn_cancelar.Animated = true;
+            this.btn_cancelar.AutoRoundedCorners = true;
+            this.btn_cancelar.BackColor = System.Drawing.Color.Transparent;
+            this.btn_cancelar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(151)))), ((int)(((byte)(145)))));
+            this.btn_cancelar.BorderRadius = 22;
+            this.btn_cancelar.BorderThickness = 1;
+            this.btn_cancelar.CheckedState.Parent = this.btn_cancelar;
+            this.btn_cancelar.CustomImages.Parent = this.btn_cancelar;
+            this.btn_cancelar.Enabled = false;
+            this.btn_cancelar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(106)))), ((int)(((byte)(88)))));
+            this.btn_cancelar.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cancelar.ForeColor = System.Drawing.Color.White;
+            this.btn_cancelar.HoverState.Parent = this.btn_cancelar;
+            this.btn_cancelar.Image = ((System.Drawing.Image)(resources.GetObject("btn_cancelar.Image")));
+            this.btn_cancelar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_cancelar.Location = new System.Drawing.Point(611, 466);
+            this.btn_cancelar.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_cancelar.Name = "btn_cancelar";
+            this.btn_cancelar.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(50)))), ((int)(((byte)(39)))));
+            this.btn_cancelar.ShadowDecoration.BorderRadius = 22;
+            this.btn_cancelar.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(44)))), ((int)(((byte)(34)))));
+            this.btn_cancelar.ShadowDecoration.Enabled = true;
+            this.btn_cancelar.ShadowDecoration.Parent = this.btn_cancelar;
+            this.btn_cancelar.Size = new System.Drawing.Size(151, 46);
+            this.btn_cancelar.TabIndex = 43;
+            this.btn_cancelar.Text = "Cancelar";
+            this.btn_cancelar.TextOffset = new System.Drawing.Point(10, 0);
+            this.btn_cancelar.Visible = false;
+            this.btn_cancelar.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
             // Empleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -789,7 +860,12 @@ namespace DojaCafe
             this.Controls.Add(this.btn_delete);
 =======
             this.ClientSize = new System.Drawing.Size(968, 542);
+<<<<<<< HEAD
+            this.Controls.Add(this.btn_cancelar);
+            this.Controls.Add(this.cbx_id);
+=======
 >>>>>>> 0658bd3d1bbc7d5c369412c4ad357f0a1fd67bc4
+>>>>>>> dad7967a04f3bae900b7a5a7236c35166afb9a3f
             this.Controls.Add(this.btn_mod);
             this.Controls.Add(this.btn_delete);
             this.Controls.Add(this.btn_bitacora);
@@ -851,5 +927,7 @@ namespace DojaCafe
         private Guna.UI2.WinForms.Guna2Button btn_bitacora;
         private Guna.UI2.WinForms.Guna2Button btn_delete;
         private Guna.UI2.WinForms.Guna2Button btn_mod;
+        private Guna.UI2.WinForms.Guna2ComboBox cbx_id;
+        private Guna.UI2.WinForms.Guna2Button btn_cancelar;
     }
 }
