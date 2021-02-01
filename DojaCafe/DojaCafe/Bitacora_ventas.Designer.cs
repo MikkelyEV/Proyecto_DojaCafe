@@ -43,12 +43,9 @@ namespace DojaCafe
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgv_ventas = new Guna.UI2.WinForms.Guna2DataGridView();
             this.vENTABindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.dOJACAFEDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dOJACAFEDataSet = new DojaCafe.DOJACAFEDataSet();
             this.btn_volver = new Guna.UI2.WinForms.Guna2Button();
             this.btn_delete = new Guna.UI2.WinForms.Guna2Button();
             this.vENTABindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.vENTATableAdapter = new DojaCafe.DOJACAFEDataSetTableAdapters.VENTATableAdapter();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,8 +56,6 @@ namespace DojaCafe
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ventas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vENTABindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dOJACAFEDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dOJACAFEDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vENTABindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -132,21 +127,7 @@ namespace DojaCafe
             this.dgv_ventas.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(215)))), ((int)(((byte)(95)))));
             this.dgv_ventas.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.dgv_ventas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_ventas_CellContentClick);
-            // 
-            // vENTABindingSource1
-            // 
-            this.vENTABindingSource1.DataMember = "VENTA";
-            this.vENTABindingSource1.DataSource = this.dOJACAFEDataSetBindingSource;
-            // 
-            // dOJACAFEDataSetBindingSource
-            // 
-            this.dOJACAFEDataSetBindingSource.DataSource = this.dOJACAFEDataSet;
-            this.dOJACAFEDataSetBindingSource.Position = 0;
-            // 
-            // dOJACAFEDataSet
-            // 
-            this.dOJACAFEDataSet.DataSetName = "DOJACAFEDataSet";
-            this.dOJACAFEDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+         
             // 
             // btn_volver
             // 
@@ -204,16 +185,7 @@ namespace DojaCafe
             this.btn_delete.TabIndex = 59;
             this.btn_delete.Text = "Eliminar";
             this.btn_delete.TextOffset = new System.Drawing.Point(10, 0);
-            // 
-            // vENTABindingSource
-            // 
-            this.vENTABindingSource.DataMember = "VENTA";
-            this.vENTABindingSource.DataSource = this.dOJACAFEDataSetBindingSource;
-            // 
-            // vENTATableAdapter
-            // 
-            this.vENTATableAdapter.ClearBeforeFill = true;
-            // 
+
             // guna2BorderlessForm1
             // 
             this.guna2BorderlessForm1.ContainerControl = this;
@@ -318,10 +290,6 @@ namespace DojaCafe
             this.Text = "Bitacora Ventas";
             this.Load += new System.EventHandler(this.Bitacora_ventas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ventas)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vENTABindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dOJACAFEDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dOJACAFEDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vENTABindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -331,10 +299,7 @@ namespace DojaCafe
         private Guna.UI2.WinForms.Guna2DataGridView dgv_ventas;
         private Guna.UI2.WinForms.Guna2Button btn_delete;
         private Guna.UI2.WinForms.Guna2Button btn_volver;
-        private System.Windows.Forms.BindingSource dOJACAFEDataSetBindingSource;
-        private DOJACAFEDataSet dOJACAFEDataSet;
         private System.Windows.Forms.BindingSource vENTABindingSource;
-        private DOJACAFEDataSetTableAdapters.VENTATableAdapter vENTATableAdapter;
         private System.Windows.Forms.BindingSource vENTABindingSource1;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;

@@ -21,8 +21,7 @@ namespace DojaCafe
         private void Bitacora_ventas_Load(object sender, EventArgs e)
         {
             // TODO: esta línea de código carga datos en la tabla 'dOJACAFEDataSet.VENTA' Puede moverla o quitarla según sea necesario.
-            this.vENTATableAdapter.Fill(this.dOJACAFEDataSet.VENTA);
-            string cadenaConex = @"Data Source = QUESADILLA; Initial Catalog = DOJACAFE; Integrated Security = True;MultipleActiveResultSets=True";
+            string cadenaConex = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\Users\mikel\source\repos\MikkelyEV\Proyecto_DojaCafe - Final\DojaCafe\DojaCafe\DojaCafe.mdf; Integrated Security = True";
             string cadenaSQL = "SELECT * FROM VENTA ORDER BY folio";
             SqlDataAdapter da = new SqlDataAdapter();
             DataTable dt = new DataTable();
@@ -37,19 +36,6 @@ namespace DojaCafe
             da.Dispose();
             dgv_ventas.AutoGenerateColumns = true;
             dgv_ventas.DataSource = dt;
-        }
-
-        private void fillByToolStripButton_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                this.vENTATableAdapter.FillBy(this.dOJACAFEDataSet.VENTA);
-            }
-            catch (System.Exception ex)
-            {
-                System.Windows.Forms.MessageBox.Show(ex.Message);
-            }
-
         }
 
         private void dgv_ventas_CellContentClick(object sender, DataGridViewCellEventArgs e)
