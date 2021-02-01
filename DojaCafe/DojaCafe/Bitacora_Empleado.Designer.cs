@@ -66,7 +66,10 @@ namespace DojaCafe
             this.btn_volver.TabIndex = 72;
             this.btn_volver.Text = "Volver";
             this.btn_volver.TextOffset = new System.Drawing.Point(10, 0);
+<<<<<<< HEAD
+=======
             this.btn_volver.Click += new System.EventHandler(this.btn_volver_Click);
+>>>>>>> 0658bd3d1bbc7d5c369412c4ad357f0a1fd67bc4
             // 
             // dgv_empleado
             // 

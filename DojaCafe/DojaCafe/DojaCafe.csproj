@@ -73,6 +73,12 @@
     <Compile Include="Cliente.Designer.cs">
       <DependentUpon>Cliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="DOJACAFEDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DOJACAFEDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Empleados.cs">
     <Compile Include="..\..\..\..\..\..\Desktop\Empleados.cs">
       <SubType>Form</SubType>
       <Link>Empleados.cs</Link>
@@ -161,6 +167,17 @@
     <EmbeddedResource Include="Ventas.resx">
       <DependentUpon>Ventas.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="DOJACAFEDataSet.xsc">
+      <DependentUpon>DOJACAFEDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DOJACAFEDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DOJACAFEDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DOJACAFEDataSet.xss">
+      <DependentUpon>DOJACAFEDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
