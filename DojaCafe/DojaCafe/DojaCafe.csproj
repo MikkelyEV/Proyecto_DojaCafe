@@ -178,5 +178,8 @@
   <ItemGroup>
     <None Include="Resources\Artboard_1504.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="NewFile3.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

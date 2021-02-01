@@ -93,6 +93,30 @@ namespace DojaCafe
             conectar.Dispose();
             comando.Dispose();
         }
+        //MÉTODOSPARA---EMPLEADOS
+        public void EliminarEmpleado(int empleadoid)
+        {
+            string cadenaSQL = "Delete Empleados Where empleadoid=" + empleadoid;
+            SqlConnection conectar = new SqlConnection(cadenaConex);
+            SqlCommand comando = new SqlCommand(cadenaSQL, conectar);
+            conectar.Open();
+            comando.ExecuteNonQuery();
+            conectar.Close();
+            conectar.Dispose();
+            comando.Dispose();
+        }
+        /*
+        public void ModificarEmpleados(varchar empleado_id, varchar nombre, varchar telefono, varchar direccion, varchar correo, varchar puestoid, date fecha_nac, date fecha_con)
+        {
+            string cadenaSQL = "Update Empleados Set nombre='" + nombre + "',telefono='" + telefono + "',direccion='" + direccion + "',correo='"+ correo +"',puesto_id='"+ puesto_id + "' Where empleado_id=" + empleado_id;
+            SqlConnection conectar = new SqlConnection(cadenaConex);
+            SqlCommand comando = new SqlCommand(cadenaSQL, conectar);
+            conectar.Open();
+            comando.ExecuteNonQuery();
+            conectar.Close();
+            conectar.Dispose();
+            comando.Dispose();
+        }*/
 
     }
 

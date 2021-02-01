@@ -198,6 +198,7 @@ namespace DojaCafe
             this.txb_telefono.HoverState.Parent = this.txb_telefono;
             this.txb_telefono.Location = new System.Drawing.Point(36, 310);
             this.txb_telefono.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txb_telefono.MaxLength = 10;
             this.txb_telefono.Name = "txb_telefono";
             this.txb_telefono.PasswordChar = '\0';
             this.txb_telefono.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(137)))), ((int)(((byte)(129)))));
@@ -275,7 +276,6 @@ namespace DojaCafe
             this.txtb_id.PasswordChar = '\0';
             this.txtb_id.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(137)))), ((int)(((byte)(129)))));
             this.txtb_id.PlaceholderText = "ID";
-            this.txtb_id.ReadOnly = true;
             this.txtb_id.SelectedText = "";
             this.txtb_id.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(41)))), ((int)(((byte)(31)))));
             this.txtb_id.ShadowDecoration.Depth = 15;
@@ -326,6 +326,7 @@ namespace DojaCafe
             this.dtp_fecha.TabIndex = 33;
             this.dtp_fecha.UseTransparentBackground = true;
             this.dtp_fecha.Value = new System.DateTime(2021, 1, 30, 20, 9, 59, 22);
+            this.dtp_fecha.ValueChanged += new System.EventHandler(this.dtp_fecha_ValueChanged);
             // 
             // guna2HtmlLabel4
             // 
@@ -417,6 +418,8 @@ namespace DojaCafe
             this.cbx_puesto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(217)))), ((int)(((byte)(175)))));
             this.cbx_puesto.HoverState.Parent = this.cbx_puesto;
             this.cbx_puesto.ItemHeight = 30;
+            this.cbx_puesto.Items.AddRange(new object[] {
+            ""});
             this.cbx_puesto.ItemsAppearance.Parent = this.cbx_puesto;
             this.cbx_puesto.Location = new System.Drawing.Point(36, 415);
             this.cbx_puesto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -439,6 +442,7 @@ namespace DojaCafe
             this.txb_salario.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txb_salario.DisabledState.Parent = this.txb_salario;
             this.txb_salario.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txb_salario.Enabled = false;
             this.txb_salario.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
             this.txb_salario.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txb_salario.FocusedState.Parent = this.txb_salario;
@@ -461,6 +465,7 @@ namespace DojaCafe
             this.txb_salario.Size = new System.Drawing.Size(116, 34);
             this.txb_salario.TabIndex = 40;
             this.txb_salario.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txb_salario.TextChanged += new System.EventHandler(this.txb_salario_TextChanged);
             // 
             // guna2HtmlLabel7
             // 
@@ -591,6 +596,7 @@ namespace DojaCafe
             this.btn_delete.TabIndex = 71;
             this.btn_delete.Text = "Eliminar";
             this.btn_delete.TextOffset = new System.Drawing.Point(10, 0);
+            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
             // 
             // btn_bitacora
             // 

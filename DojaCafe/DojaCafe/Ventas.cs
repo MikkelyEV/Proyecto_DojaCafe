@@ -32,7 +32,7 @@ namespace DojaCafe
         private void btn_Registrar_Click(object sender, EventArgs e)
         {
             var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-            var stringChars = new char[8];
+            var stringChars = new char[18];
             var random = new Random();
 
             for (int i = 0; i < stringChars.Length; i++)
@@ -42,6 +42,26 @@ namespace DojaCafe
 
             var Folio = new String(stringChars);
            
+        }
+
+        private void Ventas_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbx_cliente_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbx_prod_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbx_empleado_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
