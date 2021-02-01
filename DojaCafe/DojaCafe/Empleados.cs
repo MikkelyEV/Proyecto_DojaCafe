@@ -110,7 +110,7 @@ namespace DojaCafe
             String salario = txb_salario.Text;
             DateTime contratacion = DateTime.Today.Date;
             int edad = 20;
-
+            
             try
             {
                 SqlConnection conn = new SqlConnection(@"Data Source=MSI;Initial Catalog=DOJACAFE;Integrated Security=True");
@@ -206,7 +206,7 @@ namespace DojaCafe
 
         }
 
-        public string puesto(string puesto)
+        public string puestonombre(string puesto)
         {
            
             SqlConnection Conn = new SqlConnection(cadenaConex);
