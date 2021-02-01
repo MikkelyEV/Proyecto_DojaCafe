@@ -56,7 +56,7 @@ namespace DojaCafe
             this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(968, 76);
@@ -66,7 +66,7 @@ namespace DojaCafe
             // 
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.Location = new System.Drawing.Point(-8, -236);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
             this.guna2PictureBox1.Size = new System.Drawing.Size(972, 511);
@@ -91,7 +91,7 @@ namespace DojaCafe
             this.btn_bitacora.Image = ((System.Drawing.Image)(resources.GetObject("btn_bitacora.Image")));
             this.btn_bitacora.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_bitacora.Location = new System.Drawing.Point(773, 347);
-            this.btn_bitacora.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_bitacora.Margin = new System.Windows.Forms.Padding(4);
             this.btn_bitacora.Name = "btn_bitacora";
             this.btn_bitacora.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(50)))), ((int)(((byte)(39)))));
             this.btn_bitacora.ShadowDecoration.BorderRadius = 22;
@@ -121,7 +121,7 @@ namespace DojaCafe
             this.btn_Registrar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Registrar.Image")));
             this.btn_Registrar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Registrar.Location = new System.Drawing.Point(773, 255);
-            this.btn_Registrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Registrar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Registrar.Name = "btn_Registrar";
             this.btn_Registrar.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(50)))), ((int)(((byte)(39)))));
             this.btn_Registrar.ShadowDecoration.BorderRadius = 22;
@@ -228,7 +228,7 @@ namespace DojaCafe
             this.txb_folio.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txb_folio.HoverState.Parent = this.txb_folio;
             this.txb_folio.Location = new System.Drawing.Point(49, 154);
-            this.txb_folio.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txb_folio.Margin = new System.Windows.Forms.Padding(5);
             this.txb_folio.Name = "txb_folio";
             this.txb_folio.PasswordChar = '\0';
             this.txb_folio.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(137)))), ((int)(((byte)(129)))));
@@ -284,11 +284,12 @@ namespace DojaCafe
             this.cbx_prod.ItemHeight = 30;
             this.cbx_prod.ItemsAppearance.Parent = this.cbx_prod;
             this.cbx_prod.Location = new System.Drawing.Point(49, 383);
-            this.cbx_prod.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbx_prod.Margin = new System.Windows.Forms.Padding(4);
             this.cbx_prod.Name = "cbx_prod";
             this.cbx_prod.ShadowDecoration.Parent = this.cbx_prod;
             this.cbx_prod.Size = new System.Drawing.Size(93, 36);
             this.cbx_prod.TabIndex = 4;
+            this.cbx_prod.SelectedIndexChanged += new System.EventHandler(this.cbx_prod_SelectedIndexChanged);
             // 
             // cbx_empleado
             // 
@@ -307,11 +308,12 @@ namespace DojaCafe
             this.cbx_empleado.ItemHeight = 30;
             this.cbx_empleado.ItemsAppearance.Parent = this.cbx_empleado;
             this.cbx_empleado.Location = new System.Drawing.Point(431, 268);
-            this.cbx_empleado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbx_empleado.Margin = new System.Windows.Forms.Padding(4);
             this.cbx_empleado.Name = "cbx_empleado";
             this.cbx_empleado.ShadowDecoration.Parent = this.cbx_empleado;
             this.cbx_empleado.Size = new System.Drawing.Size(108, 36);
             this.cbx_empleado.TabIndex = 2;
+            this.cbx_empleado.SelectedIndexChanged += new System.EventHandler(this.cbx_empleado_SelectedIndexChanged);
             // 
             // lbl_cant
             // 
@@ -377,11 +379,12 @@ namespace DojaCafe
             this.cbx_cliente.ItemHeight = 30;
             this.cbx_cliente.ItemsAppearance.Parent = this.cbx_cliente;
             this.cbx_cliente.Location = new System.Drawing.Point(49, 268);
-            this.cbx_cliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbx_cliente.Margin = new System.Windows.Forms.Padding(4);
             this.cbx_cliente.Name = "cbx_cliente";
             this.cbx_cliente.ShadowDecoration.Parent = this.cbx_cliente;
             this.cbx_cliente.Size = new System.Drawing.Size(93, 36);
             this.cbx_cliente.TabIndex = 3;
+            this.cbx_cliente.SelectedIndexChanged += new System.EventHandler(this.cbx_cliente_SelectedIndexChanged);
             // 
             // dtp_fecha
             // 
@@ -398,7 +401,7 @@ namespace DojaCafe
             this.dtp_fecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtp_fecha.HoverState.Parent = this.dtp_fecha;
             this.dtp_fecha.Location = new System.Drawing.Point(411, 154);
-            this.dtp_fecha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtp_fecha.Margin = new System.Windows.Forms.Padding(4);
             this.dtp_fecha.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtp_fecha.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtp_fecha.Name = "dtp_fecha";
@@ -433,9 +436,10 @@ namespace DojaCafe
             this.Controls.Add(this.txb_cant);
             this.Controls.Add(this.txb_folio);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Ventas";
             this.Text = "Ventas";
+            this.Load += new System.EventHandler(this.Ventas_Load);
             this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
