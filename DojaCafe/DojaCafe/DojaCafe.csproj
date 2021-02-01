@@ -73,11 +73,13 @@
     <Compile Include="Cliente.Designer.cs">
       <DependentUpon>Cliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Empleados.cs">
+    <Compile Include="..\..\..\..\..\..\Desktop\Empleados.cs">
       <SubType>Form</SubType>
+      <Link>Empleados.cs</Link>
     </Compile>
-    <Compile Include="Empleados.Designer.cs">
+    <Compile Include="..\..\..\..\..\..\Desktop\Empleados.Designer.cs">
       <DependentUpon>Empleados.cs</DependentUpon>
+      <Link>Empleados.Designer.cs</Link>
     </Compile>
     <Compile Include="Form2.cs">
       <SubType>Form</SubType>
@@ -130,8 +132,9 @@
     <EmbeddedResource Include="Cliente.resx">
       <DependentUpon>Cliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Empleados.resx">
+    <EmbeddedResource Include="..\..\..\..\..\..\Desktop\Empleados.resx">
       <DependentUpon>Empleados.cs</DependentUpon>
+      <Link>Empleados.resx</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
@@ -177,9 +180,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Artboard_1504.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="NewFile3.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
