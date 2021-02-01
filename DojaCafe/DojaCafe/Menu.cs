@@ -17,9 +17,14 @@ namespace DojaCafe
         public Menu()
         {
             InitializeComponent();
+<<<<<<< HEAD
+            //Form1 login = new Form1();
+            //login.ShowDialog();
+=======
            /* Form1 login = new Form1();
             login.ShowDialog();
            */
+>>>>>>> 0658bd3d1bbc7d5c369412c4ad357f0a1fd67bc4
         }
 
         private void Menu_Load(object sender, EventArgs e)
@@ -49,7 +54,15 @@ namespace DojaCafe
 
         private void guna2Button5_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            try
+            {
+                Application.Exit();
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Error al cerrar sesión");
+            }
             //aqui se abre otro login
         }
 
