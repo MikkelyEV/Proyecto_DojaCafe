@@ -25,7 +25,7 @@ namespace DojaCafe
 
         private void Bitacora_Empleado_Load(object sender, EventArgs e)
         {
-            string cadenaConex = @"Data Source=MSI;Initial Catalog=DOJACAFE;Integrated Security=True";
+            string cadenaConex = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\mikel\source\repos\MikkelyEV\Proyecto_DojaCafe-Final\DojaCafe\DojaCafe\DojaCafe.mdf;Integrated Security=True";
 
             string cadenaSQL = "SELECT * FROM EMPLEADO ORDER BY empleado_id";
             SqlDataAdapter da = new SqlDataAdapter();
