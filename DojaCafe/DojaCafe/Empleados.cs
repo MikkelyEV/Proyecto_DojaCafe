@@ -66,7 +66,6 @@ namespace DojaCafe
             conn.Open();
             SqlCommand sc = new SqlCommand("select puesto from Puesto", conn);
             SqlDataReader reader;
-
             reader = sc.ExecuteReader();
             DataTable dt = new DataTable();
             dt.Columns.Add("puesto", typeof(string));
@@ -102,78 +101,58 @@ namespace DojaCafe
             String IDempleado = txtb_id.Text;
             String nombreempleado = txtb_nombre.Text;
             String Telefono = txb_telefono.Text;
-            String Puesto = cbx_puesto.Text;
+            String Puestocbx = cbx_puesto.Text;
             DateTime Fecha = dtp_fecha.Value.Date;
-            string Fecha1 = Fecha.Date.ToString();
+            string Fecha1 = Fecha.Date.ToString("MM/dd/yyyy");
             String Correo = txb_correo.Text;
             String Direccion = txb_direccion.Text;
             String salario = txb_salario.Text;
-            DateTime contratacion = DateTime.Today.Date;
-            int edad = 20;
-            puestonombre(Puesto);
-            try
+            int edad = DateTime.Now.Year-Fecha.Year;
+            String Puesto = puestonombre(Puestocbx);
+            if (edad < 18)
             {
-                SqlConnection conn = new SqlConnection(@"Data Source=MSI;Initial Catalog=DOJACAFE;Integrated Security=True");
-                conn.Open();
-                SqlCommand cmd = new SqlCommand();
-                //SqlCommand command = new SqlCommand("EXECUTE dbo.InsertarEmpleado @EClave='" + IDempleado + "'@ENombre'"+nombreempleado+ "'@ETelefono'" + Telefono+ "'@EDireccion'" + Direccion+ "'@Correo'" + Correo+ "'@EPuesto'" + Puesto+ "'@EFecha'" + Fecha + "'@EEdad"+15+"", conn);
-                SqlCommand command = new SqlCommand("EXECUTE dbo.InsertarEmpleado'" + IDempleado + "','" + nombreempleado + "','" + Telefono + "','" + Direccion + "','" + Correo + "','" + Puesto + "','" +null+ "',"+edad, conn);
-                command.ExecuteNonQuery();
-                conn.Close();
-                conn.Dispose();
-                command.Dispose();
-
-
-                conn.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Insercion fallida");
-            }
-
-
-
-            //revisar id
-
-            /*SqlConnection conectar = new SqlConnection(cadenaConex);
-            conectar.Open();
-            SqlCommand comando = new SqlCommand(cadenaSQL, conectar);
-            SqlDataReader rdr = comando.ExecuteReader();
-            if (rdr.HasRows)
-            {
-                existe = true;
-                MessageBox.Show("Esta clave de empleado ya existe");
+                MessageBox.Show("El empleado a registrar debe ser mayor de edad");
             }
             else
             {
-                existe = false;
                 try
                 {
-                    string cadenaSQL1 = "Insert into EMPLEADO (empleado_id,nombre, telefono, direccion, correo, puesto_id, fecha_nac, contratacion) Values('" + IDempleado + "','" + nombreempleado + "','" + Telefono + "','" + Direccion + "','" + Correo + "','" + Puesto +"','"+Fecha + "','"+contratacion+"')";
-                    SqlCommand comando1 = new SqlCommand(cadenaSQL1, conectar);
-                    comando1.ExecuteNonQuery();
-                    MessageBox.Show("El registro se ha agregado");
+
+                    SqlConnection conn = new SqlConnection(@"Data Source=MSI;Initial Catalog=DOJACAFE;Integrated Security=True");
+                    conn.Open();
+                    SqlCommand cmd = new SqlCommand();
+                    SqlCommand command = new SqlCommand("EXECUTE dbo.InsertarEmpleado'" + IDempleado + "','" + nombreempleado + "','" + Telefono + "','" + Direccion + "','" + Correo + "','" + Puesto + "','" + Fecha1 + "'," + edad, conn);
+                    command.ExecuteNonQuery();
+                    conn.Close();
+                    conn.Dispose();
+                    command.Dispose();
+                    MessageBox.Show("Registro realizado con exito");
                     txtb_id.Clear();
-                  txtb_nombre.Clear();
+                    txtb_nombre.Clear();
                     txb_telefono.Clear();
                     cbx_puesto.SelectedIndex = -1;
-                   dtp_fecha.Value=DateTime.Now;
-                     txb_correo.Clear();
+                    dtp_fecha.Value = DateTime.Now;
+                    txb_correo.Clear();
                     txb_direccion.Clear();
-                     txb_salario.Clear();
-                    
-                }
-                catch (Exception E)
-                {
-                    MessageBox.Show("Hubo un error, ingrese todos los datos correctamente");
+                    txb_salario.Clear();
 
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Insercion fallida");
+                    txtb_id.Clear();
+                    txtb_nombre.Clear();
+                    txb_telefono.Clear();
+                    cbx_puesto.SelectedIndex = -1;
+                    dtp_fecha.Value = DateTime.Now;
+                    txb_correo.Clear();
+                    txb_direccion.Clear();
+                    txb_salario.Clear();
                 }
 
             }
-            conectar.Close();
-            conectar.Dispose();
-            comando.Dispose();
-            */
+
+           
         }
 
         private void cbx_puesto_SelectedIndexChanged(object sender, EventArgs e)
@@ -223,9 +202,22 @@ namespace DojaCafe
 
         private void btn_delete_Click(object sender, EventArgs e)
         {
-             /*void EliminarEmpleado(empleadoid)
+          
+            
+                
+            
+            }
+
+        private void btn_delete_Click_1(object sender, EventArgs e)
+        {
+            string empleadoid = txtb_id.Text;
+            if (txtb_id.Text == "")
             {
-                string cadenaSQL = "Delete Empleados Where empleado_id=" + empleadoid;
+                MessageBox.Show("Escriba el ID del registro que desea eliminar");
+            }
+            else
+            {
+                string cadenaSQL = "EXECUTE dbo.ELIMINAR_EMPLEADO'" + empleadoid+"'";
                 SqlConnection conectar = new SqlConnection(cadenaConex);
                 SqlCommand comando = new SqlCommand(cadenaSQL, conectar);
                 conectar.Open();
@@ -233,8 +225,39 @@ namespace DojaCafe
                 conectar.Close();
                 conectar.Dispose();
                 comando.Dispose();
-             */
+                MessageBox.Show("Registro eliminado");
+                txtb_id.Clear();
             }
         }
+
+        private void btn_mod_Click(object sender, EventArgs e)
+        {
+
+            if (txtb_id.Text == "")
+            {
+                MessageBox.Show("Escriba el ID del registro que desea eliminar");
+            }
+            else
+            {
+                try
+                {
+                    
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Ha habido un error, intentelo de nuevo.");
+                    throw;
+                }
+            }
+
+        }
+        private void cargarinfo(object sender, EventArgs e)
+        {
+
+        }
+
+     
+
+    }
     }
 

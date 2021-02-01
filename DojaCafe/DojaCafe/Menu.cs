@@ -17,8 +17,14 @@ namespace DojaCafe
         public Menu()
         {
             InitializeComponent();
+<<<<<<< HEAD
             //Form1 login = new Form1();
             //login.ShowDialog();
+=======
+           /* Form1 login = new Form1();
+            login.ShowDialog();
+           */
+>>>>>>> 0658bd3d1bbc7d5c369412c4ad357f0a1fd67bc4
         }
 
         private void Menu_Load(object sender, EventArgs e)
