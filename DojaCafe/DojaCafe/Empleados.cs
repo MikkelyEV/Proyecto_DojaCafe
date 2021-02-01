@@ -206,18 +206,19 @@ namespace DojaCafe
 
         }
 
-        public void puesto(string puesto)
+        public string puesto(string puesto)
         {
-            string nombrepuesto = "2";
+           
             SqlConnection Conn = new SqlConnection(cadenaConex);
-            SqlCommand Comm1 = new SqlCommand("Select salario from Puesto Where puesto='" +   "'", Conn);
+            SqlCommand Comm1 = new SqlCommand("Select puesto_id from Puesto Where puesto='" + puesto + "'", Conn);
             Conn.Open();
             SqlDataReader DR1 = Comm1.ExecuteReader();
             if (DR1.Read())
             {
-                txb_salario.Text = DR1.GetValue(0).ToString();
+                puesto = DR1.GetValue(0).ToString();
             }
             Conn.Close();
+            return puesto;
         }
 
         private void btn_delete_Click(object sender, EventArgs e)
