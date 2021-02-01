@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -14,6 +15,7 @@ namespace DojaCafe
     {
 
         System.Boolean Bandera = false;
+        string cadenaConex = @"Data Source=MSI;Initial Catalog = DOJACAFE; Integrated Security = True";
         public Form1()
         {
             InitializeComponent();
@@ -31,15 +33,46 @@ namespace DojaCafe
 
         private void btn_aceptar_Click(object sender, EventArgs e)
         {
-            if (txtb_usuario.Text == "admin" && txtb_password.Text == "123")
+
+            try
             {
-                Bandera = true;
-                this.Close();
+                Metodos Sesion = new Metodos();
+                string usuario = txtb_usuario.Text;
+                string Contrasena = txtb_password.Text;
+                String cadenaSQL = "SELECT * FROM PUESTO WHERE puesto ='" + usuario + "'and puesto_id ='" + Contrasena + "'";
+                SqlDataAdapter da = new SqlDataAdapter();
+                DataTable dt = new DataTable();
+                SqlConnection conectar = new SqlConnection(cadenaConex);
+                SqlCommand comando = new SqlCommand(cadenaSQL, conectar);
+                da.SelectCommand = comando;
+                conectar.Open();
+                da.Fill(dt);
+                conectar.Close();
+                conectar.Dispose();
+                comando.Dispose();
+                da.Dispose();
+                if (dt.Rows.Count != 0)
+                {
+
+                    Bandera = true;
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Error en el inicio de sesión, intente de nuevo");
+                    txtb_usuario.Clear();
+                    txtb_password.Clear();
+                }
             }
-            else
+            catch (Exception)
             {
-                MessageBox.Show("User y/o Password incorrectos.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                MessageBox.Show("Error en el inicio de sesión.");
             }
+
+
+            //
+            
         }
 
         private void btn_salir_Click(object sender, EventArgs e)
